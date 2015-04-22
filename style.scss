@@ -1,9 +1,43 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300|Roboto:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700|Roboto:400,700,900|Open+Sans:400,700);
 
 $container-width: 1170px;
 $navbar-dot-size: 20px;
 
 $orange: #de5e17;
-$dark-grey: #3c454c;
+$blue-grey: #3c454c;
+
 @import 'stylesheets/fonts.scss';
 @import 'stylesheets/header.scss';
+
+body {
+  margin-top:100px;
+  @include body-font;
+}
+
+h1 {
+  color:$orange;
+  text-transform:uppercase;
+  @include h1-font;
+}
+
+h2 {
+  color:#888989;
+  @include h2-font;
+  border-bottom:1px dotted #cbcbcb;
+  padding-bottom:20px;
+  margin-bottom:20px;
+}
+
+label {
+  color:#4d4d4d;
+  @include label-font;
+  line-height:50px;
+}
+
+input {
+  &[type=text], &[type=number] {
+    color:#666666;
+    @include input-font;
+    height:50px;
+  }
+}

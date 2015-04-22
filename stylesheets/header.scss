@@ -1,12 +1,12 @@
 .navbar {
-  background-color:$dark-grey;
+  background-color:$blue-grey;
   height:50px;
   min-height:inherit;
   -webkit-box-shadow: 0 4px 25px -2px #bcbfc1;
    -moz-box-shadow: 0 4px 25px -2px #bcbfc1;
         box-shadow: 0 4px 25px -2px #bcbfc1;
   .container-fluid {
-    background-color:$dark-grey;
+    background-color:$blue-grey;
     @media screen and (min-width:768px) {
       height:50px;
       border-bottom:2px solid #fff;
@@ -20,12 +20,12 @@
   .navbar-toggle {
     background:#636a70;
     .icon-bar {
-      background-color:$dark-grey;
+      background-color:$blue-grey;
     }
   }
 
   #navbar {
-    max-width:$container-width;
+    max-width:$container-width+180;
     margin:0 auto;
 
     @media (min-width: 768px) {
@@ -67,7 +67,7 @@
                 top:50%;
                 margin-left:-((($navbar-dot-size)-5)/2);
                 margin-top:-((($navbar-dot-size)-5)/2);
-                background:$dark-grey;
+                background:$blue-grey;
               }
               &.complete span {
                 background:$orange;
