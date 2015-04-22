@@ -1,0 +1,81 @@
+.navbar {
+  background-color:$dark-grey;
+  height:50px;
+  min-height:inherit;
+  -webkit-box-shadow: 0 4px 25px -2px #bcbfc1;
+   -moz-box-shadow: 0 4px 25px -2px #bcbfc1;
+        box-shadow: 0 4px 25px -2px #bcbfc1;
+  .container-fluid {
+    background-color:$dark-grey;
+    @media screen and (min-width:768px) {
+      height:50px;
+      border-bottom:2px solid #fff;
+    }
+  }
+  a {
+    @include navbar-font;
+    color:#9da0a3;
+  }
+
+  .navbar-toggle {
+    background:#636a70;
+    .icon-bar {
+      background-color:$dark-grey;
+    }
+  }
+
+  #navbar {
+    max-width:$container-width;
+    margin:0 auto;
+
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float:none;
+
+        li {
+          width:20%;
+          text-align:center;
+
+          &.active a {
+            color:#fff;
+          }
+
+          a {
+            position:relative;
+
+            &:hover {
+              background:transparent;
+              color:#d9dadb;
+            }
+
+            .progress-dot {
+              position:relative;
+              top:5px;
+              width:$navbar-dot-size;
+              height:$navbar-dot-size;
+              background:#fff;
+              border-radius:50%;
+              margin:0 auto;
+
+              span {
+                width:($navbar-dot-size)-6;
+                height:($navbar-dot-size)-6;
+                display:block;
+                border-radius:50%;
+                position:absolute;
+                left:50%;
+                top:50%;
+                margin-left:-((($navbar-dot-size)-5)/2);
+                margin-top:-((($navbar-dot-size)-5)/2);
+                background:$dark-grey;
+              }
+              &.complete span {
+                background:$orange;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
