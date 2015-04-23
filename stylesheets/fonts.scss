@@ -28,7 +28,18 @@
   font-size:18px;
 }
 
+@mixin tooltip-font {
+  font-family: 'Roboto', sans-serif;
+  font-size:14px;
+}
+
 @mixin input-font {
   font-family: 'Roboto Condensed', sans-serif;
   font-size:27px;
+}
+
+@mixin subtotal-font {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:27px;
+  font-weight:bold;
 }

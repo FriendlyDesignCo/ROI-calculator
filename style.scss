@@ -5,13 +5,25 @@ $navbar-dot-size: 20px;
 
 $orange: #de5e17;
 $blue-grey: #3c454c;
+$blue: #0c8dc6;
+$green: #a5a50c;
+$tooltip-green: rgba(173, 173, 35, 0.98);
+
+$footer-height:75px;
+$progress-bar-height:12px;
 
 @import 'stylesheets/fonts.scss';
 @import 'stylesheets/header.scss';
+@import 'stylesheets/forms.scss';
+@import 'stylesheets/footer.scss';
+@import 'stylesheets/roi-sidebar.scss';
 
 body {
   margin-top:100px;
+  padding-bottom:$footer-height;
   @include body-font;
+  background:#f7f7f7;
+  position:relative;
 }
 
 h1 {
@@ -28,16 +40,31 @@ h2 {
   margin-bottom:20px;
 }
 
-label {
-  color:#4d4d4d;
-  @include label-font;
-  line-height:50px;
+hr {
+  border-top:1px solid #797979;
+}
+hr.dotted {
+  border-top:1px dotted #cbcbcb;
 }
 
-input {
-  &[type=text], &[type=number] {
-    color:#666666;
-    @include input-font;
-    height:50px;
+.tooltip {
+  @include tooltip-font;
+  color:#fff;
+  &.bottom .tooltip-arrow {
+    border-bottom-color:$tooltip-green;
+  }
+  .tooltip-inner {
+    background-color:$tooltip-green;
+  }
+}
+
+.btn-primary {
+  background-color:$orange;
+  border-color:$orange;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight:bold;
+  &:hover {
+    background-color:#c45416;
+    border-color:#c45416;
   }
 }

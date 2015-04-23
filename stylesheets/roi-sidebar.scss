@@ -1,0 +1,49 @@
+#roi-sidebar .well {
+  position:fixed;
+  border-radius:10px;
+  border-top-left-radius:0;
+  border-top-right-radius:0;
+  background:#eaeaea;
+  border:1px solid #e1e1e1;
+  font-family:'Roboto', sans-serif;
+  font-weight:100;
+  color:#767979;
+  font-size:18px;
+  padding-top:25px;
+  width:350px;
+  margin-top:20px;
+  padding-bottom:5px;
+
+  #progress-holder {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    background:#ccd5d6;
+    height:$progress-bar-height;
+
+    #progress {
+      position:absolute;
+      top:0;
+      left:0;
+      height:$progress-bar-height;
+      background:#bfc406;
+    }
+  }
+
+  p {
+    margin-bottom:0;
+  }
+  #estimated-roi {
+    margin-top:-5px;
+    font-size:28px;
+    font-weight:900;
+    color:$green;
+  }
+  #expand-roi {
+    color:#b3b3b3;
+    &:hover {
+      color:$green;
+    }
+  }
+}
