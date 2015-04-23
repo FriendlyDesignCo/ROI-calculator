@@ -1,4 +1,6 @@
-<?php include('header.php'); ?>
+<?php
+$activePage = 'business-impact';
+include('header.php'); ?>
 <h1>Interaction Rules</h1>
 <p><strong>DIRECTIONS:</strong> Use the numbers and formulas provided to calculate business impact. Select company specific or industry average.</p>
 
