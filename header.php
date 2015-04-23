@@ -18,8 +18,18 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-fixed-top">
+    <nav class="navbar">
       <div class="container-fluid">
+        <div class="container header-logo-container">
+          <div class="row">
+            <div class="col-md-3 col-md-push-9">
+              <a href="#"><img src="images/nac_logo.png" title="National Aviation Consortium" id="header-logo"></a>
+            </div>
+            <div class="col-md-9 col-md-pull-3">
+              <h1><strong>Return on Investment</strong> Calculator</h1>
+            </div>
+          </div>
+        </div>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -30,11 +40,11 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">Cost-Hire<div class="progress-dot complete"><span></span></div></a></li>
-            <li class="active"><a href="#">Business Impact<div class="progress-dot complete"><span></span></div></a></li>
-            <li><a href="#">Cost to Implement<div class="progress-dot"><span></span></div></a></li>
-            <li><a href="#">Possible Savings<div class="progress-dot"><span></span></div></a></li>
-            <li><a href="#">ROI<div class="progress-dot"><span></span></div></a></li>
+            <li<?php if ($activePage == 'cost-hire'): ?> class="active"<?php endif; ?>><a href="#">Cost-Hire<div class="progress-dot <?php if (false): ?>complete<?php endif; ?>"><span></span></div></a></li>
+            <li<?php if ($activePage == 'business-impact'): ?> class="active"<?php endif; ?>><a href="#">Business Impact<div class="progress-dot"><span></span></div></a></li>
+            <li<?php if ($activePage == 'cost-to-implement'): ?> class="active"<?php endif; ?>><a href="#">Cost to Implement<div class="progress-dot"><span></span></div></a></li>
+            <li<?php if ($activePage == 'possible-savings'): ?> class="active"<?php endif; ?>><a href="#">Possible Savings<div class="progress-dot"><span></span></div></a></li>
+            <li<?php if ($activePage == 'roi'): ?> class="active"<?php endif; ?>><a href="#">ROI<div class="progress-dot"><span></span></div></a></li>
           </ul>
         </div>
       </div>

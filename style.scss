@@ -9,6 +9,7 @@ $blue: #0c8dc6;
 $green: #a5a50c;
 $tooltip-green: rgba(173, 173, 35, 0.98);
 
+$header-height:115px;
 $footer-height:75px;
 $progress-bar-height:12px;
 
@@ -20,7 +21,7 @@ $progress-bar-height:12px;
 
 body {
   @media screen {
-    margin-top:100px;
+    padding-top:$header-height+50px;
   }
   padding-bottom:$footer-height;
   @include body-font;

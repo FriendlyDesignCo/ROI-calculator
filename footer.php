@@ -2,34 +2,38 @@
         </div>
 
         <div class="col-md-4" id="roi-sidebar">
-          <?php include('roi-sidebar.php'); ?>
+          <?php if (!isset($hideROISidebar) || !$hideROISidebar): ?>
+            <?php include('roi-sidebar.php'); ?>
+          <?php endif; ?>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid wizard-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="row">
-              <div class="col-md-3 col-xs-4">
-                <a href="#" class="btn btn-primary btn-block btn-lg">Previous</a>
-              </div>
-              <div class="hidden-xs col-md-6 text-center">
-                <p class="download-text"><strong>Download Results PDF</strong></p>
-                <p class="download-links">
-                  <a href="#"><i class="glyphicon glyphicon-download-alt"></i> <span>This Page</span></a>
-                  <a href="#"><i class="glyphicon glyphicon-download-alt"></i> <span>Whole Page</span></a>
-                </p>
-              </div>
-              <div class="col-xs-4 col-xs-offset-4 col-md-3 col-md-offset-0">
-                <a href="#" class="btn btn-primary btn-block btn-lg">Next</a>
+    <?php if (!isset($hideDownloadLinks) || !$hideDownloadLinks): ?>
+      <div class="container-fluid wizard-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-3 col-xs-4">
+                  <a href="#" class="btn btn-primary btn-block btn-lg">Previous</a>
+                </div>
+                <div class="hidden-xs col-md-6 text-center">
+                  <p class="download-text"><strong>Download Results PDF</strong></p>
+                  <p class="download-links">
+                    <a href="#"><i class="glyphicon glyphicon-download-alt"></i> <span>This Page</span></a>
+                    <a href="#"><i class="glyphicon glyphicon-download-alt"></i> <span>Whole Page</span></a>
+                  </p>
+                </div>
+                <div class="col-xs-4 col-xs-offset-4 col-md-3 col-md-offset-0">
+                  <a href="#" class="btn btn-primary btn-block btn-lg">Next</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    <?php endif; ?>
 
     <footer class="hidden-print">
       <div class="container">
