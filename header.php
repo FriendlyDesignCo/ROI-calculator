@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+<?php
+
+session_start();
+if (!isset($_SESSION['values']))
+  $_SESSION['values'] = array();
+
+function getValue($field, $default = '') {
+  if (isset($_SESSION[$field]))
+    return $_SESSION[$field];
+  return $default;
+}
+
+?><!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -7,7 +19,7 @@
     <title>ROI Calculator</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,10 +34,10 @@
       <div class="container-fluid">
         <div class="container header-logo-container">
           <div class="row">
-            <div class="col-md-3 col-md-push-9">
+            <div class="col-sm-3 col-sm-push-9">
               <a href="#"><img src="images/nac_logo.png" title="National Aviation Consortium" id="header-logo"></a>
             </div>
-            <div class="col-md-9 col-md-pull-3">
+            <div class="col-sm-9 col-sm-pull-3">
               <h1><strong>Return on Investment</strong> Calculator</h1>
             </div>
           </div>

@@ -3,9 +3,9 @@ $hideROISidebar = true;
 $hideDownloadLinks = true;
 $activePage = false;
 include('header.php'); ?>
-<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis lorem vitae tortor congue suscipit at quis dolor. Sed vehicula elit eu luctus rhoncus.</h2>
-<p>Nam consectetur arcu eget ipsum venenatis, at facilisis ligula facilisis. Fusce elit mauris, ornare sed tortor ut, suscipit maximus nulla. Morbi tincidunt ante id lacus luctus, at venenatis libero iaculis. Mauris neque est, aliquam quis tempus a, facilisis id eros. Curabitur nec blandit metus. </p>
-<p>Suspendisse iaculis metus sit amet augue dignissim porta. Cras blandit metus in sem faucibus, placerat suscipit leo ultricies. </p>
+<h2>How much is the skills gap costing your business? It might be more than you think.</h2>
+<p>Finding quality workers takes time and money. Training them up to your standards takes even more. Now consider what happens if you can’t fill a position—or if a new hire doesn’t meet your expectations or doesn’t last. Not only do you have to start the recruiting process again, but in the meantime you will likely pay overtime, increase use of staffing agencies, or simply reduce production until you are back to full strength.</p>
+<p>Complete this easy-to-use Return on Investment Calculator to add up the costs to your operation. Plus see how some proven HR solutions can improve your efficiencies, reduce recruiting expenses, and likely pay for themselves.</p>
 <p>&nbsp;</p>
 <p><a class="btn btn-primary btn-lg btn-block" href="cost-hire.php">Get Started</a></p>
 <?php include('footer.php'); ?>

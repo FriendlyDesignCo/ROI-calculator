@@ -17,14 +17,35 @@ input {
     height:50px;
     text-align:center;
   }
+  &[type=number] {
+    padding-right:0;
+  }
   .input-group-addon + & {
     border-left:0;
+  }
+  &.no-right-border {
+    border-right:0;
   }
 }
 
 .input-group-addon {
   background:#fff;
   @include input-font;
+}
+
+@media screen and (max-width:750px) {
+  .input-group {
+    .input-group-addon {
+      font-size:16px;
+      padding:10px 2px;
+    }
+  }
+  input[type=number], input[type=text] {
+    font-size:16px;
+  }
+  .input-row li {
+    height:88px;
+  }
 }
 
 .input-row {
@@ -35,6 +56,7 @@ input {
   li {
     list-style:none;
     float:left;
+    padding:0;
 
     span {
       line-height:45px;

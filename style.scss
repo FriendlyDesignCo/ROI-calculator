@@ -31,7 +31,6 @@ body {
 
 h1 {
   color:$orange;
-  text-transform:uppercase;
   @include h1-font;
 }
 
@@ -69,5 +68,12 @@ hr.dotted {
   &:hover {
     background-color:#c45416;
     border-color:#c45416;
+  }
+}
+
+
+@media screen and (min-width: 925px) {
+  .col-sm-auto {
+    width:auto;
   }
 }
