@@ -4,6 +4,12 @@ session_start();
 if (!isset($_SESSION['values']))
   $_SESSION['values'] = array();
 
+if ($_SERVER['REQUEST_METHOD'] === "POST")
+{
+  foreach ($_POST as $key => $value)
+    $_SESSION[$key] = $value;
+}
+
 function getValue($field, $default = '') {
   if (isset($_SESSION[$field]))
     return $_SESSION[$field];

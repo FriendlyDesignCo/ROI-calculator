@@ -16,7 +16,7 @@
             <div class="col-md-8">
               <div class="row">
                 <div class="col-md-3 col-xs-4">
-                  <a href="#" class="btn btn-primary btn-block btn-lg">Previous</a>
+                  <a href="<?php if (isset($previousPage)) echo $previousPage; ?>" class="btn btn-primary btn-block btn-lg">Previous</a>
                 </div>
                 <div class="hidden-xs col-md-6 text-center">
                   <p class="download-text"><strong>Download Results PDF</strong></p>
@@ -26,7 +26,7 @@
                   </p>
                 </div>
                 <div class="col-xs-4 col-xs-offset-4 col-md-3 col-md-offset-0">
-                  <a href="#" class="btn btn-primary btn-block btn-lg">Next</a>
+                  <a href="#" id="next-button" class="btn btn-primary btn-block btn-lg">Next</a>
                 </div>
               </div>
             </div>
@@ -147,6 +147,12 @@
         };
         calculateResult();
         $("input").change(calculateResult);
+
+        // Submit the form
+        $("#next-button").click(function(e){
+          e.preventDefault();
+          $("form").submit();
+        });
       });
     </script>
   </body>
