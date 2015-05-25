@@ -60,8 +60,8 @@ function getValue($field, $default = '') {
           <ul class="nav navbar-nav">
             <li<?php if ($activePage == 'cost-hire'): ?> class="active"<?php endif; ?>><a href="#">Cost-Hire<div class="progress-dot <?php if (false): ?>complete<?php endif; ?>"><span></span></div></a></li>
             <li<?php if ($activePage == 'business-impact'): ?> class="active"<?php endif; ?>><a href="#">Business Impact<div class="progress-dot"><span></span></div></a></li>
-            <li<?php if ($activePage == 'cost-to-implement'): ?> class="active"<?php endif; ?>><a href="#">Cost to Implement<div class="progress-dot"><span></span></div></a></li>
             <li<?php if ($activePage == 'possible-savings'): ?> class="active"<?php endif; ?>><a href="#">Possible Savings<div class="progress-dot"><span></span></div></a></li>
+            <li<?php if ($activePage == 'cost-to-implement'): ?> class="active"<?php endif; ?>><a href="#">Cost to Implement<div class="progress-dot"><span></span></div></a></li>
             <li<?php if ($activePage == 'roi'): ?> class="active"<?php endif; ?>><a href="#">ROI<div class="progress-dot"><span></span></div></a></li>
           </ul>
         </div>
@@ -71,3 +71,7 @@ function getValue($field, $default = '') {
     <div class="container" id="content">
       <div class="row">
         <div class="col-md-8">
+          <form method="POST" action="<?php if (isset($nextPage)) echo $nextPage; ?>">
+            <?php foreach ($_SESSION AS $key => $value): if ($key == 'values') continue; ?>
+              <input type="hidden" name="<?php echo $key; ?>" value="<?php echo htmlentities($value); ?>">
+            <?php endforeach; ?>

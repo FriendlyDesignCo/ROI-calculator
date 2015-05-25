@@ -1,4 +1,4 @@
-
+          </form>
         </div>
 
         <div class="col-md-4" id="roi-sidebar">
@@ -16,7 +16,7 @@
             <div class="col-md-8">
               <div class="row">
                 <div class="col-md-3 col-xs-4">
-                  <a href="<?php if (isset($previousPage)) echo $previousPage; ?>" class="btn btn-primary btn-block btn-lg">Previous</a>
+                  <a href="<?php if (isset($previousPage)) echo $previousPage; ?>" id="previous-button" class="btn btn-primary btn-block btn-lg">Previous</a>
                 </div>
                 <div class="hidden-xs col-md-6 text-center">
                   <p class="download-text"><strong>Download Results PDF</strong></p>
@@ -78,6 +78,11 @@
         function moneyFormat(x) {
           return '$' + numberWithCommas(x);
         }
+
+        // Remove duplicate hidden variables
+        $("input[type!=hidden]").each(function(){
+          $("input[name=" + $(this).attr('name') + "][type=hidden]").remove();
+        });
 
         $("input").each(function(){
           if ($(this).data('clone') !== undefined) {
@@ -144,6 +149,24 @@
 
           var costPerHireBusinessImpact = recruitingAndHiringCostPerHire+staffingFirmCost+ojtTotal;
           $("#cost-per-hire-total").html(moneyFormat(costPerHireBusinessImpact));
+
+          var annualRevenue = parseInt($("input[name=annual-revenue]").val());
+
+          var overtimeHours = parseInt($("input[name=ot-hours]").val());
+          var overtimeTotal = overtimeHours*averageWage*1.5*technicalEmployees*52;
+          $("#overtime-total").html(moneyFormat(overtimeTotal));
+
+          var overtimePremium = Math.ceil(overtimeTotal*0.1);
+          $("#overtime-premium").html(moneyFormat(overtimePremium));
+
+          var downtimeIncrease = Math.ceil(0.00072*annualRevenue);
+          $("#downtime-increase").html(moneyFormat(downtimeIncrease));
+
+          var cycleTimeIncrease = Math.ceil(0.00648*annualRevenue);
+          $("#cycle-time-increase").html(moneyFormat(cycleTimeIncrease));
+
+          var businessImpactTotal = overtimePremium+downtimeIncrease+cycleTimeIncrease;
+          $("#business-impact-total").html(moneyFormat(businessImpactTotal));
         };
         calculateResult();
         $("input").change(calculateResult);
