@@ -58,11 +58,11 @@ function getValue($field, $default = '') {
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li<?php if ($activePage == 'cost-hire'): ?> class="active"<?php endif; ?>><a href="#">Cost-Hire<div class="progress-dot <?php if (false): ?>complete<?php endif; ?>"><span></span></div></a></li>
-            <li<?php if ($activePage == 'business-impact'): ?> class="active"<?php endif; ?>><a href="#">Business Impact<div class="progress-dot"><span></span></div></a></li>
-            <li<?php if ($activePage == 'possible-savings'): ?> class="active"<?php endif; ?>><a href="#">Possible Savings<div class="progress-dot"><span></span></div></a></li>
-            <li<?php if ($activePage == 'cost-to-implement'): ?> class="active"<?php endif; ?>><a href="#">Cost to Implement<div class="progress-dot"><span></span></div></a></li>
-            <li<?php if ($activePage == 'roi'): ?> class="active"<?php endif; ?>><a href="#">ROI<div class="progress-dot"><span></span></div></a></li>
+            <li<?php if ($activePage == 'cost-hire'): ?> class="active"<?php endif; ?>><a href="cost-hire.php">Cost-Hire<div class="progress-dot <?php if (false): ?>complete<?php endif; ?>"><span></span></div></a></li>
+            <li<?php if ($activePage == 'business-impact'): ?> class="active"<?php endif; ?>><a href="business-impact.php">Business Impact<div class="progress-dot"><span></span></div></a></li>
+            <li<?php if ($activePage == 'possible-savings'): ?> class="active"<?php endif; ?>><a href="possible-savings.php">Possible Savings<div class="progress-dot"><span></span></div></a></li>
+            <li<?php if ($activePage == 'cost-to-implement'): ?> class="active"<?php endif; ?>><a href="cost-to-implement.php">Cost to Implement<div class="progress-dot"><span></span></div></a></li>
+            <li<?php if ($activePage == 'roi'): ?> class="active"<?php endif; ?>><a href="roi.php">ROI<div class="progress-dot"><span></span></div></a></li>
           </ul>
         </div>
       </div>
