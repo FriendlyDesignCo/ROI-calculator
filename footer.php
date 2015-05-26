@@ -38,10 +38,10 @@
     <footer class="hidden-print">
       <div class="container">
         <div class="col-xs-4 col-md-2">
-          <a href="#"><img src="images/footer_logo.png" title="Manufacturing Institute"></a>
+          <a href="http://www.themanufacturinginstitute.org/Skills-Certification/Skills-Certification.aspx"><img src="images/footer_logo.png" title="Manufacturing Institute"></a>
         </div>
         <div class="col-xs-4 col-xs-offset-4 col-md-3 col-md-offset-7 text-right">
-          <a href="#">Sources</a>
+          <a href="sources.php">Sources</a>
         </div>
       </div>
     </footer>
