@@ -2,7 +2,44 @@
 
 session_start();
 if (!isset($_SESSION['values']))
-  $_SESSION['values'] = array();
+{
+  $defaults = array(
+    'number-of-technical-employees' => '50',
+    'number-of-hires-per-year' => '5',
+    'average-wage-of-open-positions' => '20',
+    'average-advertising-cost' => '3500',
+    'interview-length' => '1',
+    'interview-participants' => '3',
+    'management-cost' => '45',
+    'internal-interview-count' => '10',
+    'internal-interview-length' => '1.5',
+    'internal-participants' => '3',
+    'internal-management-cost' => '45',
+    'preemployment-testing' => '10200',
+    'hr-time' => '1',
+    'hr-hourly' => '25',
+    'filled-by-staffing-firm' => '5',
+    'staffing-firm-percentage' => '25',
+    'ojt-hours' => '300',
+    'staff-ojt-hours' => '150',
+    'staff-ojt-wage' => '36',
+    'ojt-consumables' => '2000',
+    'annual-revenue' => '12000000',
+    'ot-hours' => '4',
+    'turnover-percent-reduction' => '50',
+    'recruiting-percent-reduction' => '50',
+    'staffing-percent-reduction' => '100',
+    'ojt-percent-reduction' => '33',
+    'planner-salary' => '60',
+    'planner-hours' => '150',
+    'pm-salary' => '45',
+    'pm-hours' => '50',
+    'supervisor-salary' => '36',
+    'supervisor-hours' => '60',
+  );
+  foreach ($defaults as $key => $value)
+    $_SESSION[$key] = $value;
+}
 
 if ($_SERVER['REQUEST_METHOD'] === "POST")
 {
@@ -15,6 +52,7 @@ function getValue($field, $default = '') {
     return $_SESSION[$field];
   return $default;
 }
+
 
 ?><!DOCTYPE html>
 <html lang="en">
