@@ -26,7 +26,7 @@
                   </p>
                 </div>
                 <div class="col-xs-4 col-xs-offset-4 col-md-3 col-md-offset-0">
-                  <a href="#" id="next-button" class="btn btn-primary btn-block btn-lg">Next</a>
+                  <?php if ($activePage !== 'roi'): ?><a href="#" id="next-button" class="btn btn-primary btn-block btn-lg">Next</a><?php endif; ?>
                 </div>
               </div>
             </div>
@@ -168,6 +168,7 @@
           var businessImpactTotal = overtimePremium+downtimeIncrease+cycleTimeIncrease;
           $("#business-impact-total").html(moneyFormat(businessImpactTotal));
 
+          // Possible Savings
           var turnoverPercentReduction = parseInt($("input[name=turnover-percent-reduction]").val());
 
           var turnoverHiringCostReduction = Math.ceil(recruitingAndHiringCostPerHire*yearlyHires*turnoverPercentReduction/100);
@@ -217,6 +218,25 @@
 
           var totalPossibleSavings = reductionTurnover+reductionCompany+staffingReduction+reductionOJT;
           $("#total-possible-savings").html(moneyFormat(totalPossibleSavings));
+
+          // Cost to Implement
+          var plannerSalary = parseInt($("input[name=planner-salary]").val());
+          var plannerHours = parseInt($("input[name=planner-hours]").val());
+          var plannerCost = plannerSalary*plannerHours;
+          $("#planner-cost").html(moneyFormat(plannerCost));
+
+          var pmSalary = parseInt($("input[name=pm-salary]").val());
+          var pmHours = parseInt($("input[name=pm-hours]").val());
+          var pmCost = pmSalary*pmHours;
+          $("#pm-cost").html(moneyFormat(pmCost));
+
+          var supervisorSalary = parseInt($("input[name=supervisor-salary]").val());
+          var supervisorHours = parseInt($("input[name=supervisor-hours]").val());
+          var supervisorCost = supervisorSalary*supervisorHours;
+          $("#supervisor-cost").html(moneyFormat(supervisorCost));
+
+          var totalImplementationCost = plannerCost+pmCost+supervisorCost;
+          $("#total-implementation-cost").html(moneyFormat(totalImplementationCost));
         };
         calculateResult();
         $("input").change(calculateResult);
