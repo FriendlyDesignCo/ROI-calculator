@@ -167,6 +167,56 @@
 
           var businessImpactTotal = overtimePremium+downtimeIncrease+cycleTimeIncrease;
           $("#business-impact-total").html(moneyFormat(businessImpactTotal));
+
+          var turnoverPercentReduction = parseInt($("input[name=turnover-percent-reduction]").val());
+
+          var turnoverHiringCostReduction = Math.ceil(recruitingAndHiringCostPerHire*yearlyHires*turnoverPercentReduction/100);
+          $("#reduction-hiring-costs").html(moneyFormat(turnoverHiringCostReduction));
+
+          var turnoverOJTReduction = Math.ceil(ojtTotal*yearlyHires*turnoverPercentReduction/100);
+          $("#reduction-ojt-turnover").html(moneyFormat(turnoverOJTReduction));
+
+          var reductionTurnover = turnoverHiringCostReduction+turnoverOJTReduction;
+          $("#reduction-turnover").html(moneyFormat(reductionTurnover));
+
+          var recruitingPercentReduction = parseInt($("input[name=recruiting-percent-reduction]").val());
+
+          var reductionAdvertisement = Math.ceil(advertisingCost*recruitingPercentReduction/100);
+          $("#reduction-recruitment-advertising").html(moneyFormat(reductionAdvertisement));
+
+          var reductionInterviews = Math.ceil(interviewCost*recruitingPercentReduction/100);
+          $("#reduction-interviews").html(moneyFormat(reductionInterviews));
+
+          var reductionMeetings = Math.ceil(internalMeetingCost*recruitingPercentReduction/100);
+          $("#reduction-meetings").html(moneyFormat(reductionMeetings));
+
+          var reductionPreemploymentTesting = Math.ceil(preemploymentTestingCost*recruitingPercentReduction/100);
+          $("#reduction-preemployment-testing").html(moneyFormat(reductionPreemploymentTesting));
+
+          var reductionScreening = Math.ceil(hrCost*recruitingPercentReduction/100);
+          $("#reduction-screening").html(moneyFormat(reductionScreening));
+
+          var reductionCompany = reductionAdvertisement+reductionInterviews+reductionMeetings+reductionPreemploymentTesting+reductionScreening;
+          $("#reduction-company").html(moneyFormat(reductionCompany));
+
+          var staffingPercentReduction = parseInt($("input[name=staffing-percent-reduction]").val());
+
+          var staffingReduction = Math.ceil(staffingFirmCost*staffingPercentReduction/100);
+          $("#reduction-staffing").html(moneyFormat(staffingReduction));
+
+          var ojtPercentReduction = parseInt($("input[name=ojt-percent-reduction]").val());
+
+          var reductionEmployeeOJT = Math.ceil(employeeOJT*yearlyHires*ojtPercentReduction/100);
+          $("#reduction-employee-ojt").html(moneyFormat(reductionEmployeeOJT));
+
+          var reductionSupervisorOJT = Math.ceil(staffOJT*yearlyHires*ojtPercentReduction/100);
+          $("#reduction-supervisor-ojt").html(moneyFormat(reductionSupervisorOJT));
+
+          var reductionOJT = reductionEmployeeOJT+reductionSupervisorOJT;
+          $("#reduction-ojt").html(moneyFormat(reductionOJT));
+
+          var totalPossibleSavings = reductionTurnover+reductionCompany+staffingReduction+reductionOJT;
+          $("#total-possible-savings").html(moneyFormat(totalPossibleSavings));
         };
         calculateResult();
         $("input").change(calculateResult);
