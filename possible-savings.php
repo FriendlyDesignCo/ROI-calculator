@@ -5,6 +5,8 @@ $nextPage = 'cost-to-implement.php';
 include('header.php'); ?>
 <h1>Possible Savings</h1>
 
+<hr>
+
 <h2>Reduction in Turnover</h2>
 <p>Consider an additional perk companies frequently realize from hiring from a better candidate pool: These employees are a better fit for the job, and they typically stay longer in the position. This benefit is actually realized the following year because less employees need to be hired and trained. Companies report that employee retention may <strong>improve by 50% or more</strong> when they hire candidates with an industry certification that matches their needs.</p>
 <p><strong>DIRECTIONS:</strong> Enter a percent reduction you expect to achieve in turnover for your new, better-qualified employees.</p>
@@ -51,7 +53,7 @@ include('header.php'); ?>
   </div>
 </div>
 
-<br><br><br>
+<hr>
 
 <h2>Cost Savings Resulting from an Education Partnership</h2>
 <p>Hiring workers is expensive! Building a pipeline of workers with the right skills can dramatically reduce your costs.</p>
@@ -130,7 +132,8 @@ include('header.php'); ?>
     <p class="subtotal" id="reduction-company">$</p>
   </div>
 </div>
-<br><br><br>
+
+<hr>
 
 <h2>Reduction in Hiring Cost (Staffing or Placement Agency)</h2>
 <p>If you rely on temporary/placement agencies for some or all of your technical hires, that’s another potential area where you can save. Some businesses have completely eliminated temporary agencies, and the fees they pay, when they build a robust community college partnership.</p>
@@ -157,7 +160,8 @@ include('header.php'); ?>
     <p class="subtotal" id="reduction-staffing">$</p>
   </div>
 </div>
-<br><br><br>
+
+<hr>
 
 <h2>Reduction in OJT Cost Per Employee</h2>
 <p>Frequently, better qualified candidates require less on-the-job training to come up to speed once hired. Many companies have reported a 33% reduction in OJT for employees that already possess an industry certification.</p>

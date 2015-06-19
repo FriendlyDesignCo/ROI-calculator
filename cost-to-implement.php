@@ -8,6 +8,8 @@ include('header.php'); ?>
 <p>Of course, partnerships with a community college do require an investment. Most companies find the biggest costs are staff time to establish a partnership and manage candidate flows.</p>
 <p><strong>DIRECTIONS:</strong> Use the numbers and formulas provided to calculate business impact. Enter figures you expect for your company, or use the prepopulated numbers that other companies have reported spending.</p>
 
+<hr>
+
 <h2>Project Planning Activities</h2>
 <p>Typically, the company's initial investment in setting up workforce certification includes time spent by the line management, supervisors, and HR Manager to plan and implement the process.</p>
 
@@ -39,6 +41,8 @@ include('header.php'); ?>
   </div>
 </div>
 
+<hr>
+
 <h2>Project Management</h2>
 <p>In successful projects where certified workers are being prepared, the company identifies a point person to serve as manager of the project. This person will serve as the point of contact with the company for all aspects of the project.</p>
 
@@ -69,6 +73,8 @@ include('header.php'); ?>
     <p class="result" id="pm-cost">$</p>
   </div>
 </div>
+
+<hr>
 
 <h2>Workforce Supervision</h2>
 <label>Costs to Oversee Interns/Trainees</label>

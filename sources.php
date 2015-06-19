@@ -6,6 +6,8 @@ include('header.php'); ?>
 <h1>Sources</h1>
 <p>The following sources were used in the ROI calculator:</p>
 
+<hr>
+
 <h2>Advertising Cost</h2>
 
 <p><a href="http://www.brookings.edu/research/interactives/2014/job-vacancies-and-stem-skills#/M10420">Brookings Report - STEM Vacancies</a><br>

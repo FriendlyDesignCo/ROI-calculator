@@ -9,6 +9,8 @@ include('header.php');
 <p><strong>DIRECTIONS:</strong> Fill in the blanks below and on the following pages for your company or business unit.</p>
 <p>&nbsp;</p>
 
+<hr>
+
 <h2>Your Company/Business Unit</h2>
 <div class="row">
   <div class="col-md-9 col-xs-8">
@@ -42,7 +44,7 @@ include('header.php');
     </div>
   </div>
 </div>
-<hr class="dotted">
+<hr>
 
 <h2>Recruiting and Hiring Costs</h2>
 <label>Advertising</label>

@@ -8,6 +8,8 @@ include('header.php'); ?>
 <p style="text-align:center;color:#a5a50c;"><span style="border-bottom:1px solid #a5a50c;">RETURN - COST OF PROJECT</span><br>COST OF PROJECT</p>
 <p>Your numbers from the previous sections have gone into the table below to calculate your expected ROI from this project.. You can go back to previous sections to change any variables and see how they impact the ROI. When you are satisfied with the results, you can print or save your work.</p>
 
+<hr>
+
 <h2>Return on Investment</h2>
 <table class="table">
   <tr>
