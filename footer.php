@@ -166,6 +166,8 @@
           var cycleTimeIncrease = Math.ceil(0.00648*annualRevenue);
           $("#cycle-time-increase").html(moneyFormat(cycleTimeIncrease));
 
+          $("#open-position-cost").html(moneyFormat(downtimeIncrease+cycleTimeIncrease));
+
           var businessImpactTotal = overtimePremium+downtimeIncrease+cycleTimeIncrease;
           $("#business-impact-total").html(moneyFormat(businessImpactTotal));
 

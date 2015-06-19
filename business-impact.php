@@ -5,21 +5,7 @@ $nextPage = 'possible-savings.php';
 include('header.php'); ?>
 <h1>Business Impact</h1>
 <p>Research indicates that unfilled technical positions have a significant impact on overtime, cycle time, and downtime. According to business studies, on average, these amount to 11% of earnings for a typical production facility.</p>
-<p><strong>DIRECTIONS:</strong> Use the numbers and formulas provided to calculate business impact. Enter figures for your company/business unit, or use the prepopulated numbers that represent the national industry average.</p>
-
-
-<h2>Your Company/Business Unit</h2>
-<div class="row">
-  <div class="col-md-4">
-    <label>Annual Revenue</label>
-  </div>
-  <div class="col-md-4 col-md-offset-4">
-    <div class="input-group">
-      <div class="input-group-addon">$</div>
-      <input name="annual-revenue" type="number" value="<?php echo getValue('annual-revenue', 12000000); ?>" class="form-control">
-    </div>
-  </div>
-</div>
+<p>Since most companies calculate overtime, we will start with that expense and its impact on ROI.</p>
 
 <hr>
 
@@ -50,23 +36,43 @@ include('header.php'); ?>
 
 <hr class="dotted">
 
-<label>Weekly Overtime Premium</label>
-<p class="help-text">Research has shown a 10% increase in overtime due to the skills gap. You can use that estimate, or enter in a different figure for your company’s overtime premium.</p>
 <div class="row">
+  <div class="col-md-9">
+    <label>Premium on Weekly Overtime</label>
+    <p class="help-text">Research has shown a 10% increase in overtime due to the skills gap. You can use that estimate, or enter in a different figure for your company’s overtime premium.</p>
+  </div>
   <div class="col-md-3">
     <div class="input-group">
       <input name="weekly-overtime-premium" type="number" class="form-control" placeholder="10" value="<?php echo getValue('weekly-overtime-premium', 10); ?>" min="0" step="1" max="100">
       <div class="input-group-addon">%</div>
     </div>
   </div>
-  <div class="col-md-3 col-md-offset-6">
-    <p class="result" id="overtime-premium">$</p>
-  </div>
 </div>
 
-<hr class="dotted">
+<hr>
+<p class="text-center total-description">Weekly Overtime Cost</p>
+<p class="text-center total" id="overtime-premium">$</p>
+<hr>
 
-<h2>Cost of Open Positions</h2>
+
+<h2>Downtime and Cycle Time</h2>
+<p>This ROI calculation may be just the tip of the iceberg in the total cost of the skills gap for your business.</p>
+<p>Downtime and cycle time are two hidden impacts from lacking the right workers in the right position. Consider the costs when higher setup or programming time reduces your efficiency. Or when a lack of skilled maintenance workers leads to machines going down longer and more frequently.</p>
+<p>To get an estimate of the potential impact, start by entering your revenue.</p>
+
+<hr class="dotted">
+<div class="row">
+  <div class="col-md-4">
+    <label>Annual Revenue</label>
+  </div>
+  <div class="col-md-4 col-md-offset-4">
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input name="annual-revenue" type="number" value="<?php echo getValue('annual-revenue', 12000000); ?>" class="form-control">
+    </div>
+  </div>
+</div>
+<hr class="dotted">
 
 <div class="row">
   <div class="col-md-9">
@@ -88,10 +94,21 @@ include('header.php'); ?>
     <p class="subtotal" id="cycle-time-increase">$</p>
   </div>
 </div>
+<hr class="dotted">
 
+<div class="row">
+  <div class="col-md-9">
+    <p class="subtotal-description">Total cost of open positions</p>
+  </div>
+  <div class="col-md-3">
+    <p class="subtotal" id="open-position-cost">$</p>
+  </div>
+</div>
 <hr>
 
-<p class="text-center total-description">Total Business Impact</p>
-<p class="text-center total" id="business-impact-total">$117,600</p>
+
+
+<p class="text-center total-description">Total costs of downtime and cycle time</p>
+<p class="text-center total" id="business-impact-total">$</p>
 
 <?php include('footer.php');
