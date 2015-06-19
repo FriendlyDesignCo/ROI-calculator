@@ -380,5 +380,7 @@ hr.dotted {
 @media screen and (min-width: 925px) {
   .col-sm-auto {
     width: auto; } }
+abbr[title] {
+  border-bottom: none; }
 
 /*# sourceMappingURL=style.css.map */

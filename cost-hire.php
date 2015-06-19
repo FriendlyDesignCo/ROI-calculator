@@ -261,7 +261,7 @@ include('header.php');
 <hr>
 
 <h2>On the Job Training (OJT) Costs</h2>
-<label>Employee <abbr title="On the Job Training">OJT</abbr> Costs</label>
+<label>Employee <abbr title="On the Job Training" data-toggle="tooltip">OJT</abbr> Costs</label>
 <p class="help-text">Amount of time a new employee spends on in-house training or non-productive position</p>
 <div class="row">
   <div class="col-md-9 col-xs-9">
@@ -285,7 +285,7 @@ include('header.php');
 </div>
 <hr class="dotted">
 
-<label>Supervisor <abbr title="On the Job Training">OJT</abbr> Costs Per Hire</label>
+<label>Supervisor <abbr title="On the Job Training" data-toggle="tooltip">OJT</abbr> Costs Per Hire</label>
 <p class="help-text">Amount of time staff spends training or supervising new hires (time spent away from actual production)</p>
 <div class="row">
   <div class="col-md-9">
