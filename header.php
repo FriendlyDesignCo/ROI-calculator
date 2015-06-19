@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if (!isset($_SESSION['values']))
+if (!isset($_SESSION['number-of-technical-employees']))
 {
   $defaults = array(
     'number-of-technical-employees' => '50',

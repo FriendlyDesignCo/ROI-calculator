@@ -253,6 +253,13 @@
         calculateResult();
         $("input").change(calculateResult);
 
+        var saveData = function(){
+          $.post($("form").attr('action'), $("form").serialize(), function(data){
+
+          });
+        };
+        $("input").change(saveData);
+
         // Submit the form
         $("#next-button").click(function(e){
           e.preventDefault();
