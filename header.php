@@ -16,6 +16,7 @@ if (!isset($_SESSION['values']))
     'internal-participants' => '3',
     'internal-management-cost' => '45',
     'preemployment-testing' => '10200',
+    'hr-candidates' => '5',
     'hr-time' => '1',
     'hr-hourly' => '25',
     'filled-by-staffing-firm' => '5',

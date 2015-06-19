@@ -118,7 +118,9 @@
           var internalMeetingCost = internalInterviewCount*internalInterviewLength*internalInterviewParticipants*internalManagementCost;
           $("#internal-meeting-cost").html(moneyFormat(internalMeetingCost));
 
-          var hrCost = yearlyHires*10*hrTime*hrHourly;
+          var hrCandidates = parseInt($("input[name=hr-candidates]").val());
+
+          var hrCost = hrCandidates*10*hrTime*hrHourly;
           $("#hr-cost").html(moneyFormat(hrCost));
 
           var recruitingAndHiringCost = advertisingCost+interviewCost+internalMeetingCost+preemploymentTestingCost+hrCost;
