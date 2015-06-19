@@ -32,7 +32,7 @@ include('header.php');
 
 <div class="row">
   <div class="col-md-9 col-xs-8">
-    <label>Average Wage of Open Positions (Fully Loaded) <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="bottom" title="Include annual wage and benefits"></i></label>
+    <label>Average Wage of Open Positions (Fully Loaded) <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="bottom" title="Include hourly wage and benefits"></i></label>
   </div>
   <div class="col-md-3 col-xs-4">
     <div class="input-group">
@@ -158,7 +158,7 @@ include('header.php');
 <div class="row">
   <div class="col-md-9">
     <ul class="input-row row">
-      <li class="col-xs-2"><input name="hr-candidates" type="number" class="form-control" placeholder="50" value="<?php echo getValue('hr-candidates', 5); ?>"><label>Candidates</label></li>
+      <li class="col-xs-2"><input name="hr-candidates" type="number" class="form-control" min="0" step="1" placeholder="5" value="<?php echo getValue('hr-candidates', 5); ?>"><label>Candidates</label></li>
       <li><span>X</span></li>
       <li class="col-xs-3">
         <div class="input-group">
