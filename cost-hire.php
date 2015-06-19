@@ -217,7 +217,7 @@ include('header.php');
 <h2>Staffing/Placement Firm Costs</h2>
 
 <label>Staffing/Placement Firm Costs</label>
-<p class="help-text">Premium paid to a search firm to identify and select candidates, or to a temporary agency</p>
+<p class="help-text">Premium paid to a search firm to identify and select candidates, or to a temporary agency (if not applicable, enter zero jobs).</p>
 <div class="row">
   <div class="col-md-9">
     <ul class="input-row row">
