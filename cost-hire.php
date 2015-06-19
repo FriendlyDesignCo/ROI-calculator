@@ -106,7 +106,7 @@ include('header.php');
 </div>
 <hr class="dotted">
 
-<label>Internal meetings to screen and select candidates</label>
+<label>Internal meetings to select new employee</label>
 <p class="help-text">Staff time spent reviewing and considering candidates</p>
 <div class="row">
   <div class="col-md-9">
