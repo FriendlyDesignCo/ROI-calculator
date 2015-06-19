@@ -159,7 +159,7 @@ include('header.php'); ?>
 </div>
 <br><br><br>
 
-<h2>Reduction in OJT Training Cost Per Employee</h2>
+<h2>Reduction in OJT Cost Per Employee</h2>
 <p>Frequently, better qualified candidates require less on-the-job training to come up to speed once hired. Many companies have reported a 33% reduction in OJT for employees that already possess an industry certification.</p>
 <p><strong>DIRECTIONS:</strong> Enter a percent reduction you expect to achieve in the training time required for a new employee.</p>
 
