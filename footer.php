@@ -156,7 +156,8 @@
           var overtimeTotal = overtimeHours*averageWage*1.5*technicalEmployees*52;
           $("#overtime-total").html(moneyFormat(overtimeTotal));
 
-          var overtimePremium = Math.ceil(overtimeTotal*0.1);
+          var overtimePremiumPercentage = parseInt($("input[name=weekly-overtime-premium]").val());
+          var overtimePremium = Math.ceil(overtimeTotal*(overtimePremiumPercentage/100));
           $("#overtime-premium").html(moneyFormat(overtimePremium));
 
           var downtimeIncrease = Math.ceil(0.00072*annualRevenue);

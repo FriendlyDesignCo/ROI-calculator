@@ -50,13 +50,17 @@ include('header.php'); ?>
 
 <hr class="dotted">
 
+<label>Weekly Overtime Premium</label>
+<p class="help-text">Research has shown a 10% increase in overtime due to the skills gap. You can use that estimate, or enter in a different figure for your company’s overtime premium.</p>
 <div class="row">
-  <div class="col-md-9">
-    <p class="subtotal-description">10% Premium on Weekly Overtime</p>
-    <p class="help-text">Research has shown a 10% increase in overtime due to the skills gap</p>
-  </div>
   <div class="col-md-3">
-    <p class="subtotal" id="overtime-premium">$</p>
+    <div class="input-group">
+      <input name="weekly-overtime-premium" type="number" class="form-control" placeholder="10" value="<?php echo getValue('weekly-overtime-premium', 10); ?>" min="0" step="1" max="100">
+      <div class="input-group-addon">%</div>
+    </div>
+  </div>
+  <div class="col-md-3 col-md-offset-6">
+    <p class="result" id="overtime-premium">$</p>
   </div>
 </div>
 

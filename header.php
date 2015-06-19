@@ -26,6 +26,7 @@ if (!isset($_SESSION['values']))
     'ojt-consumables' => '2000',
     'annual-revenue' => '12000000',
     'ot-hours' => '4',
+    'overtime-premium' => '10',
     'turnover-percent-reduction' => '50',
     'recruiting-percent-reduction' => '50',
     'staffing-percent-reduction' => '100',
