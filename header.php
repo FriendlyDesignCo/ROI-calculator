@@ -39,6 +39,7 @@ if (!isset($_SESSION['number-of-technical-employees']))
     'pm-hours' => '50',
     'supervisor-salary' => '36',
     'supervisor-hours' => '60',
+    'progress' => array('cost-hire.php' => false,'business-impact.php' => false,'possible-savings.php' => false,'cost-to-implement.php' => false)
   );
   foreach ($defaults as $key => $value)
     $_SESSION[$key] = $value;
@@ -46,6 +47,7 @@ if (!isset($_SESSION['number-of-technical-employees']))
 
 if ($_SERVER['REQUEST_METHOD'] === "POST")
 {
+  @$_SESSION['progress'][$previousPage] = true;
   foreach ($_POST as $key => $value)
     $_SESSION[$key] = $value;
 }
@@ -99,10 +101,10 @@ function getValue($field, $default = '') {
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li<?php if ($activePage == 'cost-hire'): ?> class="active"<?php endif; ?>><a href="cost-hire.php">Cost-Hire<div class="progress-dot <?php if (false): ?>complete<?php endif; ?>"><span></span></div></a></li>
-            <li<?php if ($activePage == 'business-impact'): ?> class="active"<?php endif; ?>><a href="business-impact.php">Business Impact<div class="progress-dot"><span></span></div></a></li>
-            <li<?php if ($activePage == 'possible-savings'): ?> class="active"<?php endif; ?>><a href="possible-savings.php">Possible Savings<div class="progress-dot"><span></span></div></a></li>
-            <li<?php if ($activePage == 'cost-to-implement'): ?> class="active"<?php endif; ?>><a href="cost-to-implement.php">Cost to Implement<div class="progress-dot"><span></span></div></a></li>
+            <li<?php if ($activePage == 'cost-hire'): ?> class="active"<?php endif; ?>><a href="cost-hire.php">Cost-Hire<div class="progress-dot <?php if ($_SESSION['progress']['cost-hire.php']): ?>complete<?php endif; ?>"><span></span></div></a></li>
+            <li<?php if ($activePage == 'business-impact'): ?> class="active"<?php endif; ?>><a href="business-impact.php">Business Impact<div class="progress-dot <?php if ($_SESSION['progress']['business-impact.php']): ?>complete<?php endif; ?>"><span></span></div></a></li>
+            <li<?php if ($activePage == 'possible-savings'): ?> class="active"<?php endif; ?>><a href="possible-savings.php">Possible Savings<div class="progress-dot <?php if ($_SESSION['progress']['possible-savings.php']): ?>complete<?php endif; ?>"><span></span></div></a></li>
+            <li<?php if ($activePage == 'cost-to-implement'): ?> class="active"<?php endif; ?>><a href="cost-to-implement.php">Cost to Implement<div class="progress-dot <?php if ($_SESSION['progress']['cost-to-implement.php']): ?>complete<?php endif; ?>"><span></span></div></a></li>
             <li<?php if ($activePage == 'roi'): ?> class="active"<?php endif; ?>><a href="roi.php">ROI<div class="progress-dot"><span></span></div></a></li>
           </ul>
         </div>
@@ -113,6 +115,6 @@ function getValue($field, $default = '') {
       <div class="row">
         <div class="col-md-8">
           <form method="POST" action="<?php if (isset($nextPage)) echo $nextPage; ?>">
-            <?php foreach ($_SESSION AS $key => $value): if ($key == 'values') continue; ?>
+            <?php foreach ($_SESSION AS $key => $value): if ($key == 'values' || $key == 'progress') continue; ?>
               <input type="hidden" name="<?php echo $key; ?>" value="<?php echo htmlentities($value); ?>">
             <?php endforeach; ?>
