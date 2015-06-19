@@ -75,7 +75,7 @@ include('header.php');
 <div class="row">
   <div class="col-md-9">
     <ul class="input-row row">
-      <li class="col-md-2 col-xs-6"><input type="number" class="form-control" value="<?php echo getValue('number-of-hires-per-year', 5)*10; ?>" readonly><label>Candidates</label></li>
+      <li class="col-md-2 col-xs-6"><input name="interview-candidate-count" type="number" min="0" step="1" class="form-control" value="<?php echo getValue('interview-candidate-count', 25); ?>"><label>Candidates</label></li>
       <li class="col-xs-2 col-sm-auto"><span>X</span></li>
       <li class="col-xs-offset-4 hidden-md hidden-lg"></li>
       <li class="col-md-3 col-xs-6">

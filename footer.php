@@ -98,6 +98,7 @@
           var yearlyHires = parseInt($("input[name=number-of-hires-per-year]").val());
           var averageWage = parseFloat($("input[name=average-wage-of-open-positions]").val());
           var positionAdvertisingCost = parseInt($("input[name=average-advertising-cost]").val());
+          var interviewCandidateCount = parseInt($("input[name=interview-candidate-count]").val());
           var interviewLength = parseFloat($("input[name=interview-length]").val());
           var interviewParticipants = parseFloat($("input[name=interview-participants]").val());
           var managementCost = parseInt($("input[name=management-cost]").val());
@@ -112,7 +113,7 @@
           var advertisingCost = yearlyHires*positionAdvertisingCost;
           $("#advertising-cost").html(moneyFormat(advertisingCost));
 
-          var interviewCost = yearlyHires*10*interviewLength*interviewParticipants*managementCost;
+          var interviewCost = interviewCandidateCount*interviewLength*interviewParticipants*managementCost;
           $("#interview-cost").html(moneyFormat(interviewCost));
 
           var internalMeetingCost = internalInterviewCount*internalInterviewLength*internalInterviewParticipants*internalManagementCost;

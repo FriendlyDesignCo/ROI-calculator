@@ -11,6 +11,7 @@ if (!isset($_SESSION['number-of-technical-employees']))
     'interview-length' => '1',
     'interview-participants' => '3',
     'management-cost' => '45',
+    'interview-candidate-count' => '25',
     'internal-interview-count' => '10',
     'internal-interview-length' => '1.5',
     'internal-participants' => '3',
