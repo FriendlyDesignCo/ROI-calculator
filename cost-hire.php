@@ -330,7 +330,7 @@ include('header.php');
 </div>
 <hr>
 
-<p class="text-center total-description">Total Business Impact</p>
+<p class="text-center total-description">Total Cost Per Hire</p>
 <p class="text-center total" id="cost-per-hire-total">$</p>
 
 <?php include('footer.php');
