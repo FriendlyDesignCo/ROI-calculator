@@ -165,7 +165,7 @@ include('header.php'); ?>
 
 <div class="row">
   <div class="col-md-8">
-    <label>Reduction/Elimination of Staffing Agency Fees</label>
+    <label>Reduction/Elimination of Employee Training</label>
   </div>
   <div class="col-md-4">
     <div class="input-group">
