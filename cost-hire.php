@@ -283,7 +283,7 @@ include('header.php');
 </div>
 <hr class="dotted">
 
-<label>Supervisor <abbr title="On the Job Training">OJT</abbr> Costs</label>
+<label>Supervisor <abbr title="On the Job Training">OJT</abbr> Costs Per Hire</label>
 <p class="help-text">Amount of time staff spends training or supervising new hires (time spent away from actual production)</p>
 <div class="row">
   <div class="col-md-9">
@@ -322,7 +322,7 @@ include('header.php');
 
 <div class="row">
   <div class="col-md-9">
-    <p class="subtotal-description">Total On the Job Training Cost<p>
+    <p class="subtotal-description">Total On the Job Training Cost Per Hire<p>
   </div>
   <div class="col-md-3">
     <p class="subtotal" id="ojt-total">$</p>
