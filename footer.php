@@ -57,8 +57,10 @@
         var fixHeader = function() {
           if ($(window).scrollTop() > 100) {
             $("nav").addClass('fixed');
+            $("#roi-sidebar .well").addClass('fixed');
           } else {
             $("nav").removeClass('fixed');
+            $("#roi-sidebar .well").removeClass('fixed');
           }
         };
         fixHeader();

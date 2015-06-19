@@ -1,5 +1,5 @@
 #roi-sidebar .well {
-  position:fixed;
+  position:absolute;
   border-radius:10px;
   border-top-left-radius:0;
   border-top-right-radius:0;
@@ -13,6 +13,11 @@
   width:350px;
   margin-top:20px;
   padding-bottom:5px;
+
+  &.fixed {
+    position:fixed;
+    top:63px;
+  }
 
   #progress-holder {
     position:absolute;
