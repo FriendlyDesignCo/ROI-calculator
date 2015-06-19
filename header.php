@@ -84,7 +84,7 @@ function getValue($field, $default = '') {
               <a href="#"><img src="images/nac_logo.png" title="National Aviation Consortium" id="header-logo"></a>
             </div>
             <div class="col-sm-9 col-sm-pull-3">
-              <h1><strong>Return on Investment</strong> Calculator</h1>
+              <a href="index.php"><h1><strong>Return on Investment</strong> Calculator</h1></a>
             </div>
           </div>
         </div>
