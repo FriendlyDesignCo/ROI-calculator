@@ -132,7 +132,7 @@
 
           var staffingFirmCost = 2000*filledByStaffingFirm*averageWage*staffingFirmPercentage/100;
           $("#staffing-firm-cost").html(moneyFormat(staffingFirmCost));
-          $("#staffing-firm-total").html(moneyFormat(staffingFirmCost));
+          $("#staffing-firm-total").html(moneyFormat(Math.ceil(staffingFirmCost / yearlyHires)));
 
           var ojtHours = parseInt($("input[name=ojt-hours]").val());
           var employeeOJT = ojtHours*averageWage;
