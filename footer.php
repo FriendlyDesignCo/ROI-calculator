@@ -247,8 +247,8 @@
           $("#roi-possible-savings").html(moneyFormat(totalPossibleSavings));
           $("#roi-investment").html(moneyFormat(totalImplementationCost));
           $("#roi-ratio").html("$" + ((totalPossibleSavings-totalImplementationCost)/totalImplementationCost).toFixed(2));
-          $("#roi").html(((totalPossibleSavings-totalImplementationCost)/totalImplementationCost).toFixed(2)*100+"%");
-          $("#estimated-roi").html(((totalPossibleSavings-totalImplementationCost)/totalImplementationCost).toFixed(2)*100+"%");
+          $("#roi").html((((totalPossibleSavings-totalImplementationCost)/totalImplementationCost)*100).toFixed(0)+"%");
+          $("#estimated-roi").html((((totalPossibleSavings-totalImplementationCost)/totalImplementationCost)*100).toFixed(0)+"%");
         };
         calculateResult();
         $("input").change(calculateResult);
