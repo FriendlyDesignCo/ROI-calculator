@@ -10,9 +10,39 @@
   color:#767979;
   font-size:18px;
   padding-top:25px;
+  padding-left:0;
+  padding-right:0;
   width:350px;
   margin-top:20px;
   padding-bottom:5px;
+
+  &:not(.opened) {
+    table {
+      display:none;
+    }
+  }
+
+  table {
+    background:#f2f2f2;
+    width:100%;
+    padding-left:15px;
+    padding-right:15px;
+
+    th {
+      font-family:'Roboto', sans-serif;
+      font-weight:100;
+      padding-left:40px;
+      color:#767979;
+      line-height:2.5em;
+    }
+    td {
+      font-family:'Roboto', sans-serif;
+      font-weight:900;
+      padding-right:40px;
+      line-height:2em;
+      text-align:right;
+    }
+  }
 
   &.fixed {
     position:fixed;

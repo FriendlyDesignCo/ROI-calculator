@@ -252,6 +252,10 @@
           $("#roi-ratio").html("$" + ((totalPossibleSavings-totalImplementationCost)/totalImplementationCost).toFixed(2));
           $("#roi").html((((totalPossibleSavings-totalImplementationCost)/totalImplementationCost)*100).toFixed(0)+"%");
           $("#estimated-roi").html((((totalPossibleSavings-totalImplementationCost)/totalImplementationCost)*100).toFixed(0)+"%");
+
+          $("#sidebar-roi-investment").html(moneyFormat(totalImplementationCost));
+          $("#sidebar-roi-savings").html(moneyFormat(totalPossibleSavings));
+          $("#sidebar-true-return").html(moneyFormat(totalPossibleSavings-totalImplementationCost));
         };
         calculateResult();
         $("input").change(calculateResult);
@@ -267,6 +271,13 @@
         $("#next-button").click(function(e){
           e.preventDefault();
           $("form").submit();
+        });
+
+        // Expand ROI button
+        $("#expand-roi").click(function(e){
+          e.preventDefault();
+          $("#roi-sidebar .well").toggleClass('opened');
+          $(".glyphicon").toggleClass('glyphicon-chevron-down').toggleClass('glyphicon-chevron-up');
         });
       });
     </script>
