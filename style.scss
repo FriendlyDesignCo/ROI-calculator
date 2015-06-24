@@ -81,3 +81,8 @@ hr.dotted {
 abbr[title] {
   border-bottom:none;
 }
+
+.form-control {
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
