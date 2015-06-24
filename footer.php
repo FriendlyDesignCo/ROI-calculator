@@ -249,9 +249,18 @@
           // ROI
           $("#roi-possible-savings").html(moneyFormat(totalPossibleSavings));
           $("#roi-investment").html(moneyFormat(totalImplementationCost));
-          $("#roi-ratio").html("$" + ((totalPossibleSavings-totalImplementationCost)/totalImplementationCost).toFixed(2));
+          $("#roi-ratio").html(((totalPossibleSavings-totalImplementationCost)/totalImplementationCost).toFixed(2));
+          $("#roi-ratio-again").html(((totalPossibleSavings-totalImplementationCost)/totalImplementationCost).toFixed(2));
           $("#roi").html((((totalPossibleSavings-totalImplementationCost)/totalImplementationCost)*100).toFixed(0)+"%");
           $("#estimated-roi").html((((totalPossibleSavings-totalImplementationCost)/totalImplementationCost)*100).toFixed(0)+"%");
+
+          $("#true-return-possible-savings").val(moneyFormat(totalPossibleSavings));
+          $("#true-return-implementation-cost").val(moneyFormat(totalImplementationCost));
+          $("#roi-true-return").html(moneyFormat(totalPossibleSavings-totalImplementationCost));
+          $("#roi-true-return-again").html(moneyFormat(totalPossibleSavings-totalImplementationCost));
+
+          $("#investment-ratio-true-return").val(moneyFormat(totalPossibleSavings-totalImplementationCost));
+          $("#investment-ratio-implementation-cost").val(moneyFormat(totalImplementationCost));
 
           $("#sidebar-roi-investment").html(moneyFormat(totalImplementationCost));
           $("#sidebar-roi-savings").html(moneyFormat(totalPossibleSavings));
