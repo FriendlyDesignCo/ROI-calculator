@@ -246,7 +246,9 @@
           var supervisorCost = supervisorSalary*supervisorHours;
           $("#supervisor-cost").html(moneyFormat(supervisorCost));
 
-          var totalImplementationCost = plannerCost+pmCost+supervisorCost;
+          miscellaneousCosts = parseInt($("input[name=miscellaneous-costs]").val());
+
+          var totalImplementationCost = plannerCost+pmCost+supervisorCost+miscellaneousCosts;
           $("#total-implementation-cost").html(moneyFormat(totalImplementationCost));
 
           // ROI

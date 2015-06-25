@@ -40,6 +40,7 @@ if (!isset($_SESSION['number-of-technical-employees']))
     'pm-hours' => '50',
     'supervisor-salary' => '36',
     'supervisor-hours' => '60',
+    'miscellaneous-costs' => '0',
     'progress' => array('cost-hire.php' => false,'business-impact.php' => false,'possible-savings.php' => false,'cost-to-implement.php' => false)
   );
   foreach ($defaults as $key => $value)

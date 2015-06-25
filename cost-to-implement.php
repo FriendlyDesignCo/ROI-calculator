@@ -106,6 +106,20 @@ include('header.php'); ?>
 </div>
 <hr>
 
+<h2>Miscellaneous Costs</h2>
+<p>Enter other costs you associate with this project, such as equipment donation, travel, or stipends/wages for interns.</p>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-8">
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input class="form-control" type="number" min="0" step="1" name="miscellaneous-costs" value="<?php echo getValue('miscellaneous-costs', 0); ?>" required>
+    </div>
+  </div>
+</div>
+<hr>
+<br><br><br>
+
 <p class="text-center total-description">Total Implementation Cost</p>
 <p class="text-center total" id="total-implementation-cost">$</p>
 
