@@ -118,7 +118,6 @@ include('header.php'); ?>
   </div>
 </div>
 <hr>
-<br><br><br>
 
 <p class="text-center total-description">Total Implementation Cost</p>
 <p class="text-center total" id="total-implementation-cost">$</p>

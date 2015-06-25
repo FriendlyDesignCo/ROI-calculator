@@ -231,7 +231,6 @@ include('header.php'); ?>
   </div>
 </div>
 <hr>
-<br><br><br>
 
 <p class="text-center total-description">Total Possible Savings</p>
 <p class="text-center total" id="total-possible-savings">$</p>
