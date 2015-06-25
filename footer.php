@@ -224,7 +224,10 @@
           var reductionOJT = reductionEmployeeOJT+reductionSupervisorOJT;
           $("#reduction-ojt").html(moneyFormat(reductionOJT));
 
-          var totalPossibleSavings = reductionTurnover+reductionCompany+staffingReduction+reductionOJT;
+
+          $("#reduction-overtime-impact").html(moneyFormat(overtimePremium));
+
+          var totalPossibleSavings = reductionTurnover+reductionCompany+staffingReduction+reductionOJT+overtimePremium;
           $("#total-possible-savings").html(moneyFormat(totalPossibleSavings));
 
           // Cost to Implement

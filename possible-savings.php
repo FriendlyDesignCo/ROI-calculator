@@ -210,6 +210,19 @@ include('header.php'); ?>
 </div>
 <br><br><br>
 
+<h2>Reduction in Overtime Cost</h2>
+<p>As you saw in the previous section on Business Impact, overtime needed to cover unfilled positions represents a significant expense. Having a pipeline of qualified candidates is a source of savings that can positively benefit your bottom line.</p>
+
+<div class="row">
+  <div class="col-md-6">
+    <label>Savings due to reduction in overtime</label>
+  </div>
+  <div class="col-md-4 col-md-offset-2">
+    <p class="subtotal" id="reduction-overtime-impact">$</p>
+  </div>
+</div>
+<br><br><br>
+
 <p class="text-center total-description">Total Possible Savings</p>
 <p class="text-center total" id="total-possible-savings">$</p>
 

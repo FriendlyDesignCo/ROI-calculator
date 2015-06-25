@@ -28,6 +28,7 @@ if (!isset($_SESSION['number-of-technical-employees']))
     'ojt-consumables' => '2000',
     'annual-revenue' => '12000000',
     'ot-hours' => '4',
+    'weekly-overtime-premium' => '10',
     'overtime-premium' => '10',
     'turnover-percent-reduction' => '50',
     'recruiting-percent-reduction' => '50',
