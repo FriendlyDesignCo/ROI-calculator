@@ -54,6 +54,9 @@
           $('[data-toggle="tooltip"]').tooltip();
         });
 
+        // Grey out addons for read-only fields
+        $("input[readonly]").siblings('.input-group-addon').css({'background-color':'#eee'});
+
         var fixHeader = function() {
           if ($(window).scrollTop() > 100) {
             $("nav").addClass('fixed');
