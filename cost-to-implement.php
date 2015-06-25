@@ -110,7 +110,11 @@ include('header.php'); ?>
 <p>Enter other costs you associate with this project, such as equipment donation, travel, or stipends/wages for interns.</p>
 
 <div class="row">
-  <div class="col-md-4 col-md-offset-8">
+  <div class="col-md-8">
+    <label>Miscellaneous Costs</label>
+    <p>Enter other costs you associate with this project, such as equipment donation, travel, or stipends/wages for interns.</p>
+  </div>
+  <div class="col-md-4">
     <div class="input-group">
       <div class="input-group-addon">$</div>
       <input class="form-control" type="number" min="0" step="1" name="miscellaneous-costs" value="<?php echo getValue('miscellaneous-costs', 0); ?>" required>
