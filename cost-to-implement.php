@@ -112,7 +112,6 @@ include('header.php'); ?>
 <div class="row">
   <div class="col-md-8">
     <label>Miscellaneous Costs</label>
-    <p>Enter other costs you associate with this project, such as equipment donation, travel, or stipends/wages for interns.</p>
   </div>
   <div class="col-md-4">
     <div class="input-group">
