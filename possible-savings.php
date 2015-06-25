@@ -17,7 +17,7 @@ include('header.php'); ?>
   </div>
   <div class="col-md-4 col-md-offset-2">
     <div class="input-group">
-      <input name="turnover-percent-reduction" type="number" min="0" step="1" max="100" value="<?php echo getValue('turnover-percent-reduction', 50); ?>" class="form-control">
+      <input name="turnover-percent-reduction" type="number" min="0" step="1" max="100" value="<?php echo getValue('turnover-percent-reduction', 50); ?>" class="form-control no-right-border">
       <div class="input-group-addon">%</div>
     </div>
   </div>
@@ -67,7 +67,7 @@ include('header.php'); ?>
   </div>
   <div class="col-md-4 col-md-offset-2">
     <div class="input-group">
-      <input name="recruiting-percent-reduction" type="number" min="0" step="1" max="100" value="<?php echo getValue('recruiting-percent-reduction', 50); ?>" class="form-control">
+      <input name="recruiting-percent-reduction" type="number" min="0" step="1" max="100" value="<?php echo getValue('recruiting-percent-reduction', 50); ?>" class="form-control no-right-border">
       <div class="input-group-addon">%</div>
     </div>
   </div>
@@ -145,7 +145,7 @@ include('header.php'); ?>
   </div>
   <div class="col-md-4">
     <div class="input-group">
-      <input name="staffing-percent-reduction" type="number" min="0" step="1" max="100" value="<?php echo getValue('staffing-percent-reduction', 100); ?>" class="form-control">
+      <input name="staffing-percent-reduction" type="number" min="0" step="1" max="100" value="<?php echo getValue('staffing-percent-reduction', 100); ?>" class="form-control no-right-border">
       <div class="input-group-addon">%</div>
     </div>
   </div>
@@ -173,7 +173,7 @@ include('header.php'); ?>
   </div>
   <div class="col-md-4">
     <div class="input-group">
-      <input name="ojt-percent-reduction" type="number" min="0" step="1" max="100" value="<?php echo getValue('ojt-percent-reduction', 33); ?>" class="form-control">
+      <input name="ojt-percent-reduction" type="number" min="0" step="1" max="100" value="<?php echo getValue('ojt-percent-reduction', 33); ?>" class="form-control no-right-border">
       <div class="input-group-addon">%</div>
     </div>
   </div>

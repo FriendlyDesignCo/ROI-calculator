@@ -43,7 +43,7 @@ include('header.php'); ?>
   </div>
   <div class="col-md-3">
     <div class="input-group">
-      <input name="weekly-overtime-premium" type="number" class="form-control" placeholder="10" value="<?php echo getValue('weekly-overtime-premium', 10); ?>" min="0" step="1" max="100">
+      <input name="weekly-overtime-premium" type="number" class="form-control no-right-border" placeholder="10" value="<?php echo getValue('weekly-overtime-premium', 10); ?>" min="0" step="1" max="100">
       <div class="input-group-addon">%</div>
     </div>
   </div>
