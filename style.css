@@ -314,7 +314,8 @@ footer {
   padding-right: 0;
   width: 350px;
   margin-top: 20px;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  max-width: 100%; }
   #roi-sidebar .well:not(.opened) table {
     display: none; }
   #roi-sidebar .well table {
