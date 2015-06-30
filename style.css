@@ -43,7 +43,7 @@
   box-shadow: 0 4px 25px -2px #bcbfc1; }
   .navbar .container-fluid {
     background-color: #3c454c; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 925px) {
       .navbar .container-fluid {
         height: 115px;
         border-bottom: 2px solid #fff; } }
@@ -60,7 +60,7 @@
   .navbar #navbar {
     max-width: 1350px;
     margin: 0 auto; }
-    @media (min-width: 768px) {
+    @media (min-width: 925px) {
       .navbar #navbar .navbar-nav {
         float: none; }
         .navbar #navbar .navbar-nav li {
