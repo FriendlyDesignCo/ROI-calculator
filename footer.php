@@ -15,7 +15,7 @@
           <div class="row">
             <div class="col-md-8">
               <div class="row">
-                <div class="col-md-3 col-xs-4">
+                <div class="col-md-3 col-xs-6">
                   <a href="<?php if (isset($previousPage)) echo $previousPage; ?>" id="previous-button" class="btn btn-primary btn-block btn-lg">Previous</a>
                 </div>
                 <div class="hidden-xs col-md-6 text-center">
@@ -27,7 +27,7 @@
                     </p>
                   <?php endif; ?>
                 </div>
-                <div class="col-xs-4 col-xs-offset-4 col-md-3 col-md-offset-0">
+                <div class="col-xs-6 col-md-3 col-md-offset-0">
                   <?php if ($activePage !== 'roi'): ?><a href="#" id="next-button" class="btn btn-primary btn-block btn-lg">Next</a><?php endif; ?>
                 </div>
               </div>
