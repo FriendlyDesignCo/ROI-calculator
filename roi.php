@@ -46,7 +46,7 @@ include('header.php'); ?>
         <input type="text" class="form-control" id="true-return-implementation-cost" readonly>
         <label>Total Investment (Cost)</label>
       </li>
-      <li><span>=</span></li>
+      <li><span style="padding:5px;">=</span></li>
     </ul>
   </div>
   <div class="col-md-3">

@@ -110,3 +110,21 @@ abbr[title] {
     line-height:1em;
   }
 }
+
+.reduced-padding {
+  padding:6px 4px;
+}
+input.smaller-font {
+  font-size:20px;
+}
+
+@media (min-width: 925px) {
+  .col-sm-0 {
+    width:auto;
+  }
+}
+@media (max-width:1200px) {
+  .input-group-addon {
+    padding:6px 4px;
+  }
+}

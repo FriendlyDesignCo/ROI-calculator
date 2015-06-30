@@ -25,7 +25,7 @@ include('header.php'); ?>
         </div>
         <label>Planner Salary</label>
       </li>
-      <li><span>X</span></li>
+      <li><span style="padding:5px;">X</span></li>
       <li class="col-xs-4">
         <div class="input-group">
           <input name="planner-hours" type="number" class="form-control no-right-border" placeholder="1" min="0" step="1" value="<?php echo getValue('planner-hours', 150); ?>">
@@ -33,7 +33,7 @@ include('header.php'); ?>
         </div>
         <label>Hours</label>
       </li>
-      <li><span>=</span></li>
+      <li><span style="padding:5px;">=</span></li>
     </ul>
   </div>
   <div class="col-md-3">
@@ -58,7 +58,7 @@ include('header.php'); ?>
         </div>
         <label>Project Manager Salary</label>
       </li>
-      <li><span>X</span></li>
+      <li><span style="padding:5px;">X</span></li>
       <li class="col-xs-4">
         <div class="input-group">
           <input name="pm-hours" type="number" class="form-control no-right-border" placeholder="1" min="0" step="1" value="<?php echo getValue('pm-hours', 50); ?>">
@@ -66,7 +66,7 @@ include('header.php'); ?>
         </div>
         <label>Hours</label>
       </li>
-      <li><span>=</span></li>
+      <li><span style="padding:5px;">=</span></li>
     </ul>
   </div>
   <div class="col-md-3">
@@ -89,7 +89,7 @@ include('header.php'); ?>
         </div>
         <label>Supervisor Salary</label>
       </li>
-      <li><span>X</span></li>
+      <li><span style="padding:5px;">X</span></li>
       <li class="col-xs-4">
         <div class="input-group">
           <input name="supervisor-hours" type="number" class="form-control no-right-border" placeholder="1" min="0" step="1" value="<?php echo getValue('supervisor-hours', 60); ?>">
@@ -97,7 +97,7 @@ include('header.php'); ?>
         </div>
         <label>Hours</label>
       </li>
-      <li><span>=</span></li>
+      <li><span style="padding:5px;">=</span></li>
     </ul>
   </div>
   <div class="col-md-3">
@@ -111,7 +111,7 @@ include('header.php'); ?>
 
 <div class="row">
   <div class="col-md-8">
-    <label>Miscellaneous Costs</label>
+    <label>Miscellaneous Costs</label>./wa
   </div>
   <div class="col-md-4">
     <div class="input-group">

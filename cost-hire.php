@@ -53,7 +53,7 @@ include('header.php');
   <div class="col-md-9">
     <ul class="input-row row">
       <li class="col-xs-3"><input type="number" class="form-control" value="<?php echo getValue('number-of-hires-per-year', 5); ?>" readonly data-clone="number-of-hires-per-year"><label>Vacancies</label></li>
-      <li><span>X</span></li>
+      <li><span style="padding:5px;">X</span></li>
       <li class="col-xs-4">
         <div class="input-group">
           <div class="input-group-addon">$</div>
@@ -61,7 +61,7 @@ include('header.php');
         </div>
         <label>Average Cost</label>
       </li>
-      <li><span>=</span></li>
+      <li><span style="padding:5px;">=</span></li>
     </ul>
   </div>
   <div class="col-md-3">
@@ -75,29 +75,28 @@ include('header.php');
 <div class="row">
   <div class="col-md-9">
     <ul class="input-row row">
-      <li class="col-md-2 col-xs-6"><input name="interview-candidate-count" type="number" min="0" step="1" class="form-control" value="<?php echo getValue('interview-candidate-count', 25); ?>"><label>Candidates</label></li>
-      <li class="col-xs-2 col-sm-auto"><span>X</span></li>
-      <li class="col-xs-offset-4 hidden-md hidden-lg"></li>
-      <li class="col-md-3 col-xs-6">
+      <li class="col-md-2 col-xs-7"><input name="interview-candidate-count" type="number" min="0" step="1" class="form-control" value="<?php echo getValue('interview-candidate-count', 25); ?>"><label>Candidates</label></li>
+      <li class="col-xs-2 col-sm-0"><span style="padding:5px;">X</span></li>
+      <li class="col-md-3 col-xs-7">
         <div class="input-group">
           <input name="interview-length" type="number" class="form-control no-right-border" placeholder="1" min="0" step="0.25" value="<?php echo getValue('interview-length', 1); ?>">
           <div class="input-group-addon">hr</div>
         </div>
         <label>Length</label>
       </li>
-      <li class="col-xs-2 col-sm-auto"><span>X</span></li>
-      <li class="col-xs-offset-4 hidden-sm hidden-md hidden-lg"></li>
-      <li class="col-md-2"><input name="interview-participants" type="number" class="form-control" placeholder="3" min="0" value="<?php echo getValue('interview-participants', 3); ?>"><label>Participants</label></li>
-      <li><span>X</span></li>
-      <li class="col-md-4">
+      <li class="col-xs-2 col-sm-auto"><span style="padding:5px;">X</span></li>
+      <li class="hidden-sm hidden-md hidden-lg"></li>
+      <li class="col-md-2 col-xs-7"><input name="interview-participants" type="number" class="form-control" placeholder="3" min="0" value="<?php echo getValue('interview-participants', 3); ?>"><label>Participants</label></li>
+      <li><span style="padding:5px;">X</span></li>
+      <li class="col-md-3 col-xs-7">
         <div class="input-group">
           <div class="input-group-addon">$</div>
-          <input name="management-cost" type="number" class="form-control no-right-border" placeholder="45" min="0" step="1" value="<?php echo getValue('management-cost', 45); ?>">
+          <input name="management-cost" style="padding-left:0;" type="number" class="form-control no-right-border" placeholder="45" min="0" step="1" value="<?php echo getValue('management-cost', 45); ?>">
           <div class="input-group-addon">/hr</div>
         </div>
         <label>Management cost</label>
       </li>
-      <li><span>=</span></li>
+      <li><span style="padding:5px;">=</span></li>
     </ul>
   </div>
   <div class="col-md-3">
@@ -111,29 +110,27 @@ include('header.php');
 <div class="row">
   <div class="col-md-9">
     <ul class="input-row row">
-      <li class="col-md-2 col-xs-6"><input name="internal-interview-count" type="number" class="form-control" min="0" value="<?php echo getValue('internal-interview-count', 10); ?>"><label>Meetings</label></li>
-      <li class="col-xs-2 col-sm-auto"><span>X</span></li>
-      <li class="col-xs-offset-4 hidden-md hidden-lg"></li>
-      <li class="col-md-3 col-xs-6">
+      <li class="col-md-2 col-xs-7"><input name="internal-interview-count" type="number" class="form-control" min="0" value="<?php echo getValue('internal-interview-count', 10); ?>"><label>Meetings</label></li>
+      <li class="col-xs-2 col-sm-0"><span style="padding:5px;">X</span></li>
+      <li class="col-md-2 col-xs-7">
         <div class="input-group">
-          <input name="internal-interview-length" type="number" class="form-control no-right-border" placeholder="1" min="0" step="0.25" value="<?php echo getValue('internal-interview-length', 1.5); ?>">
-          <div class="input-group-addon">hr</div>
+          <input name="internal-interview-length" type="number" class="smaller-font form-control no-right-border" placeholder="1" min="0" step="0.25" value="<?php echo getValue('internal-interview-length', 1.5); ?>">
+          <div class="input-group-addon reduced-padding">hr</div>
         </div>
         <label>Length</label>
       </li>
-      <li class="col-xs-2 col-sm-auto"><span>X</span></li>
-      <li class="col-xs-offset-4 hidden-sm hidden-md hidden-lg"></li>
-      <li class="col-md-2"><input name="internal-participants" type="number" class="form-control" placeholder="3" min="0" value="<?php echo getValue('internal-participants', 3); ?>"><label>Participants</label></li>
-      <li><span>X</span></li>
-      <li class="col-md-4">
+      <li class="col-xs-2 col-sm-0"><span style="padding:5px;">X</span></li>
+      <li class="col-xs-7 col-md-2"><input name="internal-participants" type="number" class="form-control" placeholder="3" min="0" value="<?php echo getValue('internal-participants', 3); ?>"><label>Participants</label></li>
+      <li><span style="padding:5px;">X</span></li>
+      <li class="col-xs-7 col-md-3">
         <div class="input-group">
           <div class="input-group-addon">$</div>
-          <input name="internal-management-cost" type="number" class="form-control no-right-border" placeholder="45" min="0" step="1" value="<?php echo getValue('internal-management-cost', 45); ?>">
+          <input name="internal-management-cost" style="padding-left:0;" type="number" class="form-control no-right-border" placeholder="45" min="0" step="1" value="<?php echo getValue('internal-management-cost', 45); ?>">
           <div class="input-group-addon">/hr</div>
         </div>
         <label>Management cost</label>
       </li>
-      <li><span>=</span></li>
+      <li><span style="padding:5px;">=</span></li>
     </ul>
   </div>
   <div class="col-md-3">
@@ -160,17 +157,17 @@ include('header.php');
 <div class="row">
   <div class="col-md-9">
     <ul class="input-row row">
-      <li class="col-xs-2"><input name="hr-candidates" type="number" class="form-control" min="0" step="1" placeholder="5" value="<?php echo getValue('hr-candidates', 5); ?>"><label>Candidates</label></li>
-      <li><span>X</span></li>
-      <li class="col-xs-3">
+      <li class="col-xs-7 col-sm-2"><input name="hr-candidates" type="number" class="form-control" min="0" step="1" placeholder="5" value="<?php echo getValue('hr-candidates', 5); ?>"><label>Candidates</label></li>
+      <li><span style="padding:5px;">X</span></li>
+      <li class="col-xs-7 col-sm-3">
         <div class="input-group">
           <input name="hr-time" type="number" class="form-control no-right-border" placeholder="1" step="0.25" value="<?php echo getValue('hr-time', 1); ?>">
           <div class="input-group-addon">hr</div>
         </div>
         <label>Time per Candidate</label>
       </li>
-      <li><span>X</span></li>
-      <li class="col-xs-4">
+      <li><span style="padding:5px;">X</span></li>
+      <li class="col-xs-7 col-sm-4">
         <div class="input-group">
           <div class="input-group-addon">$</div>
           <input name="hr-hourly" type="number" class="form-control no-right-border" placeholder="25" step="1" value="<?php echo getValue('hr-hourly', 25); ?>">
@@ -178,7 +175,7 @@ include('header.php');
         </div>
         <label>Cost per hour</label>
       </li>
-      <li><span>=</span></li>
+      <li><span style="padding:5px;">=</span></li>
     </ul>
   </div>
   <div class="col-md-3">
@@ -223,25 +220,25 @@ include('header.php');
 <div class="row">
   <div class="col-md-9">
     <ul class="input-row row">
-      <li class="col-xs-3"><input name="filled-by-staffing-firm" type="number" class="form-control" placeholder="5" min="0" step="1" value="<?php echo getValue('filled-by-staffing-firm', 5); ?>"><label>Jobs filled by staffing firm</label></li>
-      <li><span>X</span></li>
-      <li class="col-xs-4">
+      <li class="col-xs-7 col-sm-3"><input name="filled-by-staffing-firm" type="number" class="form-control" placeholder="5" min="0" step="1" value="<?php echo getValue('filled-by-staffing-firm', 5); ?>"><label>Jobs filled by staffing firm</label></li>
+      <li><span style="padding:5px;">X</span></li>
+      <li class="col-sm-4 col-xs-7 col-md-3">
         <div class="input-group">
-          <div class="input-group-addon">$</div>
-          <input type="number" class="form-control no-right-border" value="<?php echo getValue('average-wage-of-open-positions', 20); ?>" step="1" data-clone="average-wage-of-open-positions" readonly>
-          <div class="input-group-addon">/hr</div>
+          <div class="input-group-addon reduced-padding">$</div>
+          <input type="number" style="padding-left:0;" class="form-control no-right-border" value="<?php echo getValue('average-wage-of-open-positions', 20); ?>" step="1" data-clone="average-wage-of-open-positions" readonly>
+          <div class="input-group-addon reduced-padding">/hr</div>
         </div>
         <label>Hourly wage</label>
       </li>
-      <li><span>X</span></li>
-      <li class="col-xs-3">
+      <li><span style="padding:5px;">X</span></li>
+      <li class="col-xs-7 col-sm-3">
         <div class="input-group">
           <input name="staffing-firm-percentage" type="number" class="form-control no-right-border" value="<?php echo getValue('staffing-firm-percentage', 25); ?>" placeholder="25" step="0.25">
           <div class="input-group-addon">%</div>
         </div>
         <label>Fee</label>
       </li>
-      <li><span>=</span></li>
+      <li><span style="padding:5px;">=</span></li>
     </ul>
   </div>
   <div class="col-md-3">
@@ -266,9 +263,9 @@ include('header.php');
 <div class="row">
   <div class="col-md-9 col-xs-9">
     <ul class="input-row row">
-      <li class="col-md-3 col-xs-6"><input name="ojt-hours" type="number" class="form-control" placeholder="300" min="0" step="1" value="<?php echo getValue('ojt-hours', 300); ?>"><label>OJT hours</label></li>
-      <li><span>X</span></li>
-      <li class="col-md-4 col-xs-5">
+      <li class="col-md-3 col-xs-7"><input name="ojt-hours" type="number" class="form-control" placeholder="300" min="0" step="1" value="<?php echo getValue('ojt-hours', 300); ?>"><label>OJT hours</label></li>
+      <li><span style="padding:5px;">X</span></li>
+      <li class="col-md-4 col-xs-7">
         <div class="input-group">
           <div class="input-group-addon">$</div>
           <input type="number" class="form-control no-right-border" placeholder="20" step="1" value="<?php echo getValue('average-wage-of-open-positions', 20); ?>" data-clone="average-wage-of-open-positions" readonly>
@@ -276,7 +273,7 @@ include('header.php');
         </div>
         <label>Loaded salary</label>
       </li>
-      <li><span>=</span></li>
+      <li><span style="padding:5px;">=</span></li>
     </ul>
   </div>
   <div class="col-md-3">
@@ -290,9 +287,9 @@ include('header.php');
 <div class="row">
   <div class="col-md-9">
     <ul class="input-row row">
-      <li class="col-xs-3"><input name="staff-ojt-hours" type="number" class="form-control" min="0" step="1" placeholder="150" value="<?php echo getValue('staff-ojt-hours', 150); ?>"><label>OJT hours</label></li>
-      <li><span>X</span></li>
-      <li class="col-xs-4">
+      <li class="col-xs-7 col-sm-3"><input name="staff-ojt-hours" type="number" class="form-control" min="0" step="1" placeholder="150" value="<?php echo getValue('staff-ojt-hours', 150); ?>"><label>OJT hours</label></li>
+      <li><span style="padding:5px;">X</span></li>
+      <li class="col-xs-7 col-sm-4">
         <div class="input-group">
           <div class="input-group-addon">$</div>
           <input name="staff-ojt-wage" type="number" class="form-control no-right-border" placeholder="36" step="1" min="0" value="<?php echo getValue('staff-ojt-wage', 36); ?>">
@@ -300,7 +297,7 @@ include('header.php');
         </div>
         <label>Loaded salary</label>
       </li>
-      <li><span>=</span></li>
+      <li><span style="padding:5px;">=</span></li>
     </ul>
   </div>
   <div class="col-md-3">
