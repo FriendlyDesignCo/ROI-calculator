@@ -214,6 +214,9 @@ input.no-right-border {
   text-align: right;
   line-height: 48px;
   margin-bottom: 0; }
+  @media screen and (max-width: 500px) {
+    .result {
+      font-size: 23px; } }
 
 .subtotal-description {
   color: #0c8dc6;
@@ -229,6 +232,9 @@ input.no-right-border {
   font-weight: 700;
   font-size: 30px;
   text-align: right; }
+  @media screen and (max-width: 500px) {
+    .subtotal {
+      font-size: 20px; } }
 
 .total-description {
   font-family: 'Roboto', sans-serif;

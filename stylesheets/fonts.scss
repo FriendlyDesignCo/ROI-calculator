@@ -42,4 +42,7 @@
   font-family: 'Roboto Condensed', sans-serif;
   font-size:27px;
   font-weight:bold;
+  @media screen and (max-width:500px) {
+    font-size:23px;
+  }
 }
