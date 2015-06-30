@@ -12,6 +12,7 @@ label {
 
 input {
   &[type=text], &[type=number] {
+    -webkit-appearance: none;
     color:#666666;
     @include input-font;
     height:50px;

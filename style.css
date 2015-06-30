@@ -154,6 +154,7 @@ label {
   font-size: 14px; }
 
 input[type=text], input[type=number] {
+  -webkit-appearance: none;
   color: #666666;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 27px;
