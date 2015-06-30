@@ -19,11 +19,13 @@
                   <a href="<?php if (isset($previousPage)) echo $previousPage; ?>" id="previous-button" class="btn btn-primary btn-block btn-lg">Previous</a>
                 </div>
                 <div class="hidden-xs col-md-6 text-center">
-                  <p class="download-text"><strong>Download Results PDF</strong></p>
-                  <p class="download-links">
-                    <a href="#"><i class="glyphicon glyphicon-download-alt"></i> <span>This Page</span></a>
-                    <a href="#"><i class="glyphicon glyphicon-download-alt"></i> <span>Whole Page</span></a>
-                  </p>
+                  <?php if (!isset($hideJustDownloadLinks)): ?>
+                    <p class="download-text"><strong>Download Results PDF</strong></p>
+                    <p class="download-links">
+                      <a href="#"><i class="glyphicon glyphicon-download-alt"></i> <span>This Page</span></a>
+                      <a href="#"><i class="glyphicon glyphicon-download-alt"></i> <span>Whole Page</span></a>
+                    </p>
+                  <?php endif; ?>
                 </div>
                 <div class="col-xs-4 col-xs-offset-4 col-md-3 col-md-offset-0">
                   <?php if ($activePage !== 'roi'): ?><a href="#" id="next-button" class="btn btn-primary btn-block btn-lg">Next</a><?php endif; ?>

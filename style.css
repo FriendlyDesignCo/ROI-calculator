@@ -445,5 +445,26 @@ input.smaller-font {
 @media (max-width: 1200px) {
   .input-group-addon {
     padding: 6px 4px; } }
+#roi-download-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: #E9EAEB;
+  border: 1px solid #E9EAEC;
+  padding: 10px;
+  border-radius: 5px; }
+  #roi-download-container p {
+    color: #1380B0;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-weight: 500; }
+  #roi-download-container .row {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -5px; }
+  #roi-download-container .btn {
+    margin-top: 5px;
+    font-family: 'Roboto Condensed',sans-serif;
+    background: #27B7ED;
+    display: block;
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

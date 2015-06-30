@@ -1,6 +1,7 @@
 <?php
 $activePage = 'roi';
 $previousPage = 'cost-to-implement.php';
+$hideJustDownloadLinks = true;
 include('header.php'); ?>
 
 <h1>Calculating Total Return on Investment (ROI)</h1>
@@ -95,9 +96,25 @@ include('header.php'); ?>
 </div>
 <hr class="dotted">
 
-<div id="roi-container">
-  <h3>Total Return on Investment</h3>
-  <p id="roi" style="font-size:33px;"></p>
+
+<div id="roi-block">
+  <div id="roi-container">
+    <h3>Total Return on Investment</h3>
+    <p id="roi" style="font-size:33px;"></p>
+  </div>
+
+  <div id="roi-download-container" class="text-center">
+    <p>You've successfully calculated your total return on investment &mdash; now save the results.</p>
+    <div class="row">
+      <div class="col-sm-6 text-center">
+        <a href="#" class="btn"><i class="glyphicon glyphicon-download-alt"></i> Download This Page</a>
+      </div>
+      <div class="col-sm-6 text-center">
+        <a href="#" class="btn"><i class="glyphicon glyphicon-download-alt"></i> Download Whole Report</a>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
 </div>
 
 <p>Want to learn more about manufacturing certifications and building community college partnerships? Visit <a href="http://www.themanufacturinginstitute.org/Skills-Certification/Skills-Certification.aspx">The Manufacturing Institute</a>.</p>
