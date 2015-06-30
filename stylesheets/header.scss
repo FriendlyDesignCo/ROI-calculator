@@ -120,13 +120,15 @@
     }
   }
 
-  &.fixed {
-    z-index:10;
-    position:fixed;
-    top:0;
-    transform: translate3d(0,-100px,0);
-    -webkit-transform: translate3d(0,-100px,0);
-    -moz-transform: translate3d(0,-100px,0);
+  @media screen and (min-width:925px) {
+    &.fixed {
+      z-index:10;
+      position:fixed;
+      top:0;
+      transform: translate3d(0,-100px,0);
+      -webkit-transform: translate3d(0,-100px,0);
+      -moz-transform: translate3d(0,-100px,0);
+    }
   }
 }
 
@@ -140,7 +142,7 @@
     }
     .navbar-toggle {
         display: block;
-        position:absolute;
+        position:fixed;
         top:35px;
         right:5px;
     }

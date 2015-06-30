@@ -298,6 +298,12 @@
           $("#roi-sidebar .well").toggleClass('opened');
           $(".glyphicon").toggleClass('glyphicon-chevron-down').toggleClass('glyphicon-chevron-up');
         });
+
+        // Expand menu
+        $(".navbar-toggle").click(function(){
+          $("html,body").animate({'scrollTop':0});
+        });
+
       });
     </script>
   </body>
