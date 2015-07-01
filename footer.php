@@ -296,7 +296,7 @@
         $("#expand-roi").click(function(e){
           e.preventDefault();
           $("#roi-sidebar .well").toggleClass('opened');
-          $(".glyphicon").toggleClass('glyphicon-chevron-down').toggleClass('glyphicon-chevron-up');
+          $("#roi-sidebar .glyphicon").toggleClass('glyphicon-chevron-down').toggleClass('glyphicon-chevron-up');
         });
 
         // Expand menu
