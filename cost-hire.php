@@ -112,7 +112,7 @@ include('header.php');
     <ul class="input-row row">
       <li class="col-md-2 col-xs-7"><input name="internal-interview-count" type="number" class="form-control" min="0" value="<?php echo getValue('internal-interview-count', 10); ?>"><label>Meetings</label></li>
       <li class="col-xs-2 col-sm-0"><span style="padding:5px;">X</span></li>
-      <li class="col-md-2 col-xs-7">
+      <li class="col-md-3 col-xs-7">
         <div class="input-group">
           <input name="internal-interview-length" type="number" class="smaller-font form-control no-right-border" placeholder="1" min="0" step="0.25" value="<?php echo getValue('internal-interview-length', 1.5); ?>">
           <div class="input-group-addon reduced-padding">hr</div>
