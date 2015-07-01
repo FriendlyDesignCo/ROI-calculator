@@ -111,7 +111,7 @@ include('header.php'); ?>
 
 <div class="row">
   <div class="col-md-8">
-    <label>Miscellaneous Costs</label>./wa
+    <label>Miscellaneous Costs</label>
   </div>
   <div class="col-md-4">
     <div class="input-group">
