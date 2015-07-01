@@ -114,7 +114,7 @@ include('header.php');
       <li class="col-xs-2 col-sm-0"><span style="padding:5px;">X</span></li>
       <li class="col-md-3 col-xs-7">
         <div class="input-group">
-          <input name="internal-interview-length" type="number" class="smaller-font form-control no-right-border" placeholder="1" min="0" step="0.25" value="<?php echo getValue('internal-interview-length', 1.5); ?>">
+          <input name="internal-interview-length" type="number" class="form-control no-right-border" placeholder="1" min="0" step="0.25" value="<?php echo getValue('internal-interview-length', 1.5); ?>">
           <div class="input-group-addon reduced-padding">hr</div>
         </div>
         <label>Length</label>
