@@ -16,7 +16,7 @@ include('header.php'); ?>
   <div class="col-md-9">
     <ul class="input-row row">
       <li class="col-xs-3"><input name="ot-hours" type="number" class="form-control" placeholder="4" min="0" step="1" value="<?php echo getValue('ot-hours', 4); ?>"><label>Avg OT hours/week</label></li>
-      <li><span>X</span></li>
+      <li><span style="padding:5px;">X</span></li>
       <li class="col-xs-4">
         <div class="input-group">
           <div class="input-group-addon">$</div>
@@ -24,9 +24,9 @@ include('header.php'); ?>
         </div>
         <label>Wages (1.5x)</label>
       </li>
-      <li><span>X</span></li>
+      <li><span style="padding:5px;">X</span></li>
       <li class="col-xs-3"><input type="number" class="form-control" value="<?php echo getValue('number-of-technical-employees', 50); ?>" readonly><label>Employees</label></li>
-      <li><span>=</span></li>
+      <li><span style="padding:5px;">=</span></li>
     </ul>
   </div>
   <div class="col-md-3">
