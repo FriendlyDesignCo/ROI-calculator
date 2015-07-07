@@ -585,6 +585,14 @@ input.smaller-font {
 
   input + .input-group-addon {
     position: relative;
-    left: -7px; } }
+    left: -7px; }
+
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+  h2 {
+    margin-bottom: 10px;
+    padding-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
