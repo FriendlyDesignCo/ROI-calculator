@@ -125,4 +125,4 @@ include_once('header.php'); ?>
 <p class="text-center total-description">Total Implementation Cost</p>
 <p class="text-center total" id="total-implementation-cost">$</p>
 
-<?php include('footer.php');
+<?php if (!isset($print)) include('footer.php');

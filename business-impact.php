@@ -111,4 +111,4 @@ include_once('header.php'); ?>
 <p class="text-center total-description">Total costs of downtime and cycle time</p>
 <p class="text-center total" id="business-impact-total">$</p>
 
-<?php include('footer.php');
+<?php if (!isset($print)) include('footer.php');

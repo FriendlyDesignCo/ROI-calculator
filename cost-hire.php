@@ -332,4 +332,4 @@ include_once('header.php');
 <p class="text-center total-description">Total Cost Per Hire</p>
 <p class="text-center total" id="cost-per-hire-total">$</p>
 
-<?php include('footer.php');
+<?php if (!isset($print)) include('footer.php');

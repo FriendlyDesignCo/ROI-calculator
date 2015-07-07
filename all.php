@@ -2,6 +2,7 @@
 $activePage = 'cost-hire';
 $previousPage = 'index.php';
 $nextPage = 'business-impact.php';
+$print = true;
 include_once('header.php');
 
 include('cost-hire.php');

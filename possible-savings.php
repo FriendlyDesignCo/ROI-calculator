@@ -235,4 +235,4 @@ include_once('header.php'); ?>
 <p class="text-center total-description">Total Possible Savings</p>
 <p class="text-center total" id="total-possible-savings">$</p>
 
-<?php include('footer.php');
+<?php if (!isset($print)) include('footer.php');
