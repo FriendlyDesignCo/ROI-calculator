@@ -17,6 +17,7 @@ input {
     @include input-font;
     height:50px;
     text-align:center;
+    font-weight:500;
   }
   &[type=number] {
     padding-right:0;
