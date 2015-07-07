@@ -81,6 +81,10 @@ function getValue($field, $default = '') {
     <![endif]-->
   </head>
   <body>
+    <h1 class="visible-print-inline" style="line-height:50px;float:left;font-size:30px;"><strong>Return on Investment</strong> Calculator</h1>
+    <img style="float:right;padding-right:10px;padding-top:15px;width:35%;height:auto;" src="images/nac_logo_print.png" class="visible-print-block">
+    <div class="clearfix visible-print-block"></div>
+
     <nav class="navbar">
       <div class="container-fluid">
         <div class="container header-logo-container">

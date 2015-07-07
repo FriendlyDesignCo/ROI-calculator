@@ -156,3 +156,7 @@ input.smaller-font {
     color:#fff;
   }
 }
+
+@media print {
+  @import 'stylesheets/print.scss';
+}

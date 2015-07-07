@@ -501,4 +501,29 @@ input.smaller-font {
     display: block;
     color: #fff; }
 
+@media print {
+  input[type=text], input[type=number] {
+    height: 25px;
+    padding: 3px 5px; }
+
+  label {
+    margin-top: 5px; }
+
+  .input-group-addon {
+    padding: 4px 4px; }
+
+  .reduced-padding {
+    padding: 4px; }
+
+  .input-row li span {
+    position: relative;
+    top: -9px; }
+
+  .subtotal {
+    font-size: 16px; }
+
+  .subtotal-description {
+    line-height: 1.1em;
+    font-size: 16px; } }
+
 /*# sourceMappingURL=style.css.map */
