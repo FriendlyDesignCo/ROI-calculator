@@ -98,17 +98,18 @@ include_once('header.php'); ?>
 
 <div class="row">
   <div class="col-md-9">
-    <p class="subtotal-description">Total cost of open positions</p>
+    <p class="subtotal-description">TOTAL COSTS OF DOWNTIME AND CYCLE TIME</p>
   </div>
   <div class="col-md-3">
     <p class="subtotal" id="open-position-cost">$</p>
   </div>
 </div>
-<hr>
+<hr class="dotted">
+<p>Although we aren’t adding this total of downtime and cycle time into the overall estimated ROI calculation for your company, you should consider these as “hidden” factors that are negatively impacting your bottom line.</p>
 
 
 
-<p class="text-center total-description">Total costs of downtime and cycle time</p>
-<p class="text-center total" id="business-impact-total">$</p>
+<?php /* <p class="text-center total-description">Total costs of downtime and cycle time</p>
+<p class="text-center total" id="business-impact-total">$</p> */ ?>
 
 <?php if (!isset($print)) include('footer.php');
