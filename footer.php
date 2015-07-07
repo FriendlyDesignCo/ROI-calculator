@@ -10,7 +10,7 @@
     </div>
 
     <?php if (!isset($hideDownloadLinks) || !$hideDownloadLinks): ?>
-      <div class="container-fluid wizard-footer">
+      <div class="container-fluid wizard-footer hidden-print">
         <div class="container">
           <div class="row">
             <div class="col-md-8">
