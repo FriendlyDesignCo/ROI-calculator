@@ -4,6 +4,7 @@ $previousPage = 'cost-to-implement.php';
 $hideJustDownloadLinks = true;
 include_once('header.php'); ?>
 
+<div class="roi-page">
 <h1>Calculating Total Return on Investment (ROI)</h1>
 <p>Using the investment and savings numbers from your above work, you now are ready to see an estimated Return on Investment (ROI). for The formula for ROI is:</p>
 <p style="text-align:center;color:#a5a50c;"><span style="border-bottom:1px solid #a5a50c;">RETURN - COST OF PROJECT</span><br>COST OF PROJECT</p>
@@ -116,4 +117,6 @@ include_once('header.php'); ?>
 </div>
 
 <p>Want to learn more about manufacturing certifications and building community college partnerships? Visit <a href="http://www.themanufacturinginstitute.org/Skills-Certification/Skills-Certification.aspx">The Manufacturing Institute</a>.</p>
+</div>
+
 <?php include('footer.php');
