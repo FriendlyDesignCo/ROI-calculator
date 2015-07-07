@@ -518,6 +518,7 @@ input.smaller-font {
   .input-row li span {
     position: relative;
     top: -9px;
+    left: -4px;
     padding: 0 !important; }
 
   .subtotal {
@@ -527,7 +528,7 @@ input.smaller-font {
     line-height: 1.1em;
     font-size: 16px; }
 
-  .col-sm-auto {
+  .col-sm-auto, .col-sm-0 {
     width: auto;
     float: left; }
 
@@ -580,6 +581,10 @@ input.smaller-font {
     float: left; }
 
   .form-column {
-    width: 100%; } }
+    width: 100%; }
+
+  input + .input-group-addon {
+    position: relative;
+    left: -7px; } }
 
 /*# sourceMappingURL=style.css.map */
