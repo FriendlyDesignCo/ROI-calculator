@@ -1,6 +1,9 @@
 <?php
 
+if (isset($_GET['SID']))
+  session_id($_GET['SID']);
 session_start();
+
 if (!isset($_SESSION['number-of-technical-employees']))
 {
   $defaults = array(
@@ -45,6 +48,13 @@ if (!isset($_SESSION['number-of-technical-employees']))
   );
   foreach ($defaults as $key => $value)
     $_SESSION[$key] = $value;
+}
+
+if (isset($_GET['action']) && $_GET['action'] === 'download')
+{
+  $pageUrl = 'http://'.$_SERVER['HTTP_HOST'].str_replace('?action=download','',$_SERVER['REQUEST_URI']).'?SID='.session_id();
+  header("Location: http://api.html2pdfrocket.com/pdf?value=".urlencode($pageUrl)."&filename=ROI_Report.pdf&apikey=".trim(file_get_contents('key.txt'))."&UsePrintStylesheet=true&PageSize=Letter&UseGrayscale=true&LowQuality=true&MarginLeft=30&MarginRight=30&MarginTop=10&MarginBottom=10");
+  exit();
 }
 
 if ($_SERVER['REQUEST_METHOD'] === "POST")

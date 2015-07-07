@@ -107,10 +107,10 @@ include_once('header.php'); ?>
   <p>You've successfully calculated your total return on investment &mdash; now save the results.</p>
   <div class="row">
     <div class="col-sm-6 text-center">
-      <a href="#" class="btn"><i class="glyphicon glyphicon-download-alt"></i> Download This Page</a>
+      <a href="?action=download" class="btn"><i class="glyphicon glyphicon-download-alt"></i> Download This Page</a>
     </div>
     <div class="col-sm-6 text-center">
-      <a href="#" class="btn"><i class="glyphicon glyphicon-download-alt"></i> Download Whole Report</a>
+      <a href="all.php?action=download" class="btn"><i class="glyphicon glyphicon-download-alt"></i> Download Whole Report</a>
     </div>
   </div>
   <div style="clear:both;"></div>

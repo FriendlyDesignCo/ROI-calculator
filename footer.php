@@ -22,8 +22,8 @@
                   <?php if (!isset($hideJustDownloadLinks)): ?>
                     <p class="download-text"><strong>Download Results PDF</strong></p>
                     <p class="download-links">
-                      <a href="#"><i class="glyphicon glyphicon-download-alt"></i> <span>This Page</span></a>
-                      <a href="#"><i class="glyphicon glyphicon-download-alt"></i> <span>Whole Report</span></a>
+                      <a href="?action=download"><i class="glyphicon glyphicon-download-alt"></i> <span>This Page</span></a>
+                      <a href="all.php?action=download"><i class="glyphicon glyphicon-download-alt"></i> <span>Whole Report</span></a>
                     </p>
                   <?php endif; ?>
                 </div>
