@@ -14,7 +14,7 @@ include('header.php');
 <h2>Your Company/Business Unit</h2>
 <div class="row">
   <div class="col-md-9 col-xs-8">
-    <label>Number of Technical Employees <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="bottom" title="Hourly employees in production, maintenance, or skilled trades"></i></label>
+    <label>Number of Technical Employees <i class="glyphicon glyphicon-question-sign hidden-print" data-toggle="tooltip" data-placement="bottom" title="Hourly employees in production, maintenance, or skilled trades"></i></label>
   </div>
   <div class="col-md-3 col-xs-4">
     <input name="number-of-technical-employees" type="number" step="1" min="0" class="form-control" value="<?php echo getValue('number-of-technical-employees', 50); ?>" required>
@@ -34,7 +34,7 @@ include('header.php');
 
 <div class="row">
   <div class="col-md-9 col-xs-8">
-    <label>Average Wage of Open Positions (Fully Loaded) <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="bottom" title="Include hourly wage and benefits"></i></label>
+    <label>Average Wage of Open Positions (Fully Loaded) <i class="glyphicon glyphicon-question-sign hidden-print" data-toggle="tooltip" data-placement="bottom" title="Include hourly wage and benefits"></i></label>
   </div>
   <div class="col-md-3 col-xs-4">
     <div class="input-group">
@@ -141,7 +141,7 @@ include('header.php');
 
 <div class="row">
   <div class="col-md-9 col-xs-8">
-    <label>Annual cost for preemployment testing <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="bottom" title="Actual costs of any pre-employment testing done by company"></i></label>
+    <label>Annual cost for preemployment testing <i class="glyphicon glyphicon-question-sign hidden-print" data-toggle="tooltip" data-placement="bottom" title="Actual costs of any pre-employment testing done by company"></i></label>
   </div>
   <div class="col-md-3 col-xs-4">
     <div class="input-group">
