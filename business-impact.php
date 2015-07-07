@@ -10,14 +10,14 @@ include_once('header.php'); ?>
 <hr>
 
 <h2>Overtime Costs</h2>
-<label>Average Weekly Overtime Per Employee</label>
-<p class="help-text">Estimate the average weekly overtime for employees in production, maintenance, or skilled trades</p>
+<label>Average Overtime Per Employee</label>
+<p class="help-text">Estimate the average overtime for employees in production, maintenance, or skilled trades</p>
 <div class="row">
   <div class="col-md-9">
     <ul class="input-row row">
-      <li class="col-xs-3"><input name="ot-hours" type="number" class="form-control" placeholder="4" min="0" step="1" value="<?php echo getValue('ot-hours', 4); ?>"><label>Avg OT hours/week</label></li>
+      <li class="col-xs-2"><input name="ot-hours" type="number" class="form-control" placeholder="4" min="0" step="1" value="<?php echo getValue('ot-hours', 4); ?>"><label>Avg OT hours/week</label></li>
       <li><span style="padding:5px;">X</span></li>
-      <li class="col-xs-4">
+      <li class="col-xs-3">
         <div class="input-group">
           <div class="input-group-addon">$</div>
           <input type="number" class="form-control" placeholder="30" value="<?php echo getValue('average-wage-of-open-positions', 20)*1.5; ?>" readonly>
@@ -26,6 +26,8 @@ include_once('header.php'); ?>
       </li>
       <li><span style="padding:5px;">X</span></li>
       <li class="col-xs-3"><input type="number" class="form-control" value="<?php echo getValue('number-of-technical-employees', 50); ?>" readonly><label>Employees</label></li>
+      <li><span style="padding:5px;">X</span></li>
+      <li class="col-xs-2"><input type="number" class="form-control" value="52" readonly><label>Weeks per Year</label></li>
       <li><span style="padding:5px;">=</span></li>
     </ul>
   </div>
@@ -38,7 +40,7 @@ include_once('header.php'); ?>
 
 <div class="row">
   <div class="col-md-9">
-    <label>Premium on Weekly Overtime</label>
+    <label>Premium on Overtime</label>
     <p class="help-text">Research has shown a 10% increase in overtime due to the skills gap. You can use that estimate, or enter in a different figure for your company’s overtime premium.</p>
   </div>
   <div class="col-md-3">
@@ -50,7 +52,7 @@ include_once('header.php'); ?>
 </div>
 
 <hr>
-<p class="text-center total-description">Weekly Overtime Cost</p>
+<p class="text-center total-description">Annual Overtime Cost</p>
 <p class="text-center total" id="overtime-premium">$</p>
 <hr>
 
