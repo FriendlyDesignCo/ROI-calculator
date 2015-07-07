@@ -2,7 +2,7 @@
 $activePage = 'roi';
 $previousPage = 'cost-to-implement.php';
 $hideJustDownloadLinks = true;
-include('header.php'); ?>
+include_once('header.php'); ?>
 
 <h1>Calculating Total Return on Investment (ROI)</h1>
 <p>Using the investment and savings numbers from your above work, you now are ready to see an estimated Return on Investment (ROI). for The formula for ROI is:</p>
@@ -102,7 +102,7 @@ include('header.php'); ?>
   <p id="roi" style="font-size:33px;"></p>
 </div>
 
-<div id="roi-download-container" class="text-center">
+<div id="roi-download-container" class="text-center hidden-print">
   <p>You've successfully calculated your total return on investment &mdash; now save the results.</p>
   <div class="row">
     <div class="col-sm-6 text-center">

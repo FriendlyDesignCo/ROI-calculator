@@ -2,7 +2,7 @@
 $activePage = 'cost-hire';
 $previousPage = 'index.php';
 $nextPage = 'business-impact.php';
-include('header.php');
+include_once('header.php');
 ?>
 
 <h1>Cost of an Open Position</h1>

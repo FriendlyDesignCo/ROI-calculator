@@ -2,7 +2,7 @@
 $activePage = 'cost-to-implement';
 $previousPage = 'possible-savings.php';
 $nextPage = 'roi.php';
-include('header.php'); ?>
+include_once('header.php'); ?>
 
 <h1>Company Investments in Industry Certifications and Workforce Partnerships</h1>
 <p>Of course, partnerships with a community college do require an investment. Most companies find the biggest costs are staff time to establish a partnership and manage candidate flows.</p>

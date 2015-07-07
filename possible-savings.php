@@ -2,7 +2,7 @@
 $activePage = 'possible-savings';
 $previousPage = 'business-impact.php';
 $nextPage = 'cost-to-implement.php';
-include('header.php'); ?>
+include_once('header.php'); ?>
 <h1>Possible Savings</h1>
 
 <hr>

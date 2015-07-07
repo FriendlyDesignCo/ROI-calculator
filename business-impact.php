@@ -2,7 +2,7 @@
 $activePage = 'business-impact';
 $previousPage = 'cost-hire.php';
 $nextPage = 'possible-savings.php';
-include('header.php'); ?>
+include_once('header.php'); ?>
 <h1>Business Impact</h1>
 <p>Research indicates that unfilled technical positions have a significant impact on overtime, cycle time, and downtime. According to business studies, on average, these amount to 11% of earnings for a typical production facility.</p>
 <p>Since most companies calculate overtime, we will start with that expense and its impact on ROI.</p>
