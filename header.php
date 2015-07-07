@@ -72,6 +72,7 @@ function getValue($field, $default = '') {
     <!-- Bootstrap -->
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" type="text/css" media="print">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -119,7 +120,7 @@ function getValue($field, $default = '') {
 
     <div class="container" id="content">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 form-column">
           <form method="POST" action="<?php if (isset($nextPage)) echo $nextPage; ?>">
             <?php foreach ($_SESSION AS $key => $value): if ($key == 'values' || $key == 'progress') continue; ?>
               <input type="hidden" name="<?php echo $key; ?>" value="<?php echo htmlentities($value); ?>">
