@@ -128,7 +128,7 @@
 
           var hrCandidates = parseInt($("input[name=hr-candidates]").val());
 
-          var hrCost = hrCandidates*10*hrTime*hrHourly;
+          var hrCost = hrCandidates*hrTime*hrHourly;
           $("#hr-cost").html(moneyFormat(hrCost));
 
           var recruitingAndHiringCost = advertisingCost+interviewCost+internalMeetingCost+preemploymentTestingCost+hrCost;
