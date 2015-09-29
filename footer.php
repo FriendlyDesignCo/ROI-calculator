@@ -141,6 +141,7 @@
           var staffingFirmPercentage = parseFloat($("input[name=staffing-firm-percentage]").val());
 
           var staffingFirmCost = 2000*filledByStaffingFirm*averageWage*staffingFirmPercentage/100;
+          var staffingFirmTotal = Math.ceil(staffingFirmCost / yearlyHires);
           $("#staffing-firm-cost").html(moneyFormat(staffingFirmCost));
           $("#staffing-firm-total").html(moneyFormat(Math.ceil(staffingFirmCost / yearlyHires)));
 
@@ -157,7 +158,7 @@
           var ojtTotal = employeeOJT+staffOJT+ojtConsumables;
           $("#ojt-total").html(moneyFormat(ojtTotal));
 
-          var costPerHireBusinessImpact = recruitingAndHiringCostPerHire+staffingFirmCost+ojtTotal;
+          var costPerHireBusinessImpact = recruitingAndHiringCostPerHire+staffingFirmTotal+ojtTotal;
           $("#cost-per-hire-total").html(moneyFormat(costPerHireBusinessImpact));
 
           var annualRevenue = parseInt($("input[name=annual-revenue]").val());
