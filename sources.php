@@ -19,6 +19,13 @@ According to one survey, the average U.S. company spends $3,500 per new hire in 
 <h2>Business Impact</h2>
 <p><a href="http://www.themanufacturinginstitute.org/Research/Skills-and-Training-Study/Skills-and-Training-Study.aspx">2014 Manufacturing Skills &amp; Training Study</a></p>
 
+<hr>
+
+<h2>DOL Funding Statement</h2>
+<p>This product was funded by a grant awarded by the U.S. Department of Labor’s Employment and Training Administration. The product was created by the grantee and does not necessarily reflect the official position of the U.S. Department of Labor. The Department of Labor makes no guarantees, warranties, or assurances of any kind, express or implied, with respect to such information, including any information on linked sites and including, but not limited to, accuracy of the information or its completeness, timeliness, usefulness, adequacy, continued availability, or ownership. Equal Opportunity Program.</p>
+
+<hr>
+
 <br><br>
 <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="images/creativecommons.png" style="padding-bottom:30px;padding-right:10px;margin-top:5px;float:left;"></a> This work is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 Unported License</a>. To view a copy of this license, visit <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">http://creativecommons.org/licenses/by/3.0/</a>.
 <?php include('footer.php'); ?>
