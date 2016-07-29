@@ -502,6 +502,51 @@ input.smaller-font {
     display: block;
     color: #fff; }
 
+.button-box {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px;
+  background: #eaeaea; }
+  .button-box .btn {
+    background: #15b5ee;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 16px; }
+    .button-box .btn:hover {
+      background: #0c8dc6; }
+
+.spotlights {
+  margin-bottom: 50px;
+  border-top: 1px dotted #cbcbcb;
+  border-bottom: 1px dotted #cbcbcb; }
+  .spotlights .spotlight {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .spotlights .spotlight + .spotlight {
+      border-top: 1px dotted #cbcbcb; }
+    .spotlights .spotlight .row {
+      display: flex; }
+    .spotlights .spotlight img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #333333; }
+    .spotlights .spotlight div {
+      position: relative; }
+    .spotlights .spotlight .link {
+      color: #15b5ee;
+      font-size: 20px;
+      text-decoration: underline; }
+      @media (min-width: 992px) {
+        .spotlights .spotlight .link {
+          position: absolute;
+          top: 50%;
+          -o-transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); } }
+
 @media print {
   input[type=text], input[type=number] {
     height: 25px;

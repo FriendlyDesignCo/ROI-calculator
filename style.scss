@@ -157,6 +157,65 @@ input.smaller-font {
   }
 }
 
+.button-box {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px;
+  background: #eaeaea;
+
+  .btn {
+    background: #15b5ee;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+
+    &:hover {
+      background: #0c8dc6;
+    }
+  }
+}
+
+.spotlights {
+  margin-bottom: 50px;
+  border-top: 1px dotted #cbcbcb;
+  border-bottom: 1px dotted #cbcbcb;
+  .spotlight {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    & + .spotlight {
+      border-top: 1px dotted #cbcbcb;
+    }
+    .row {
+      display: flex;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #333333;
+    }
+
+    div {
+      position: relative;
+    }
+
+    .link {
+      color: #15b5ee;
+      font-size: 20px;
+      text-decoration: underline;
+      @media (min-width: 992px) {
+        position: absolute;
+        top: 50%;
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
 @media print {
   @import 'stylesheets/print.scss';
 }
