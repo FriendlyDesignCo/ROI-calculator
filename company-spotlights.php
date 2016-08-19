@@ -4,7 +4,8 @@ $hideDownloadLinks = true;
 $activePage = false;
 include('header.php'); ?>
 <h2>Company Spotlights</h2>
-<p>Pour-over vice swag, tilde humblebrag umami health goth photo booth stumptown forage single-origin coffee seitan direct trade. Swag pitchfork venmo, kale chips gastropub flannel yuccie kogi. Synth occupy actually before they sold out, man bun portland flannel vice try-hard. Post-ironic food truck yr, scenester gluten-free photo booth bushwick. Semiotics yr cred listicle fanny pack, banjo man bun. Bespoke blue bottle keffiyeh hoodie skateboard, beard selvage franzen marfa iPhone green juice polaroid drinking vinegar ugh. Gentrify cray swag, chillwave pabst polaroid portland hella seitan chambray paleo scenester sriracha.</p>
+<p>Manufacturers are realizing that past practices to fill production positions are no longer successful. The use of agencies to identify pools of candidates from which to select the best temporary to permanent workers is not providing the numbers or quality of potential new hires. Large manufacturers are becoming proactive in addressing these challenges. Small and mid-sized companies are also beginning to realize they too have to take more deliberate actions. Manufacturers have to become part of the workforce solution and all must participate if manufacturing middle skill needs are to be met.</p>
+<p>Check out the following case studies to see how companies are utilizing the ROI Calculator to assess the value and impact of their recruitment strategies.</p>
 <p>&nbsp;</p>
 <div class="spotlights">
   <a href="case-studies/MAGNET%20ROI.pdf" class="spotlight">
