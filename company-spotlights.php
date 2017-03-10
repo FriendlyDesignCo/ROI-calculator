@@ -14,6 +14,12 @@ include('header.php'); ?>
       <div class="col-sm-9"><p class="link">Case Study: Northeast Ohio</p></div>
     </div>
   </a>
+  <a href="case-studies/Richards%20Ind%20ROI.pdf" class="spotlight">
+    <div class="row">
+      <div class="col-sm-3"><img src="case-studies/CaseStudy-RichardsInd.png" alt="Manufacturing Institute’s Return on Investment Calculator Case Study: Richards Industries" width="400" height="478"></div>
+      <div class="col-sm-9"><p class="link">Case Study: Richards Industries</p></div>
+    </div>
+  </a>
   <a href="case-studies/Stober%20Drives%20ROI.pdf" class="spotlight">
     <div class="row">
       <div class="col-sm-3"><img src="case-studies/CaseStudy-StoberDrives.png" alt="Manufacturing Institute’s Return on Investment Calculator Case Study: Stober Drives" width="400" height="478"></div>
